@@ -1,0 +1,7438 @@
+<!DOCTYPE html>
+
+<!-- HEADER -->
+<html lang="en-US">
+<title>Kutokopo - Introduction</title>
+
+<link rel="stylesheet" href="dstyle.css">
+
+<head>
+<meta charset="utf-8" name="viewport" content="width=1024, initial-scale=0.1, minimum-scale=0.1"/>
+
+<script type="text/javascript">
+
+	const langs = ["english","esperanto","espanol","francais","tokipona","dasopya","deutsch","eesti_keel","nederlands","sitelenemoji"];
+
+	function onLoad2(){
+		setLanguage();
+		//dark mode
+		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			toggleLight();
+		}
+	}
+	
+	function setLanguage(){
+		let lang = navigator.language;
+		let langDisplay = document.getElementById("language");
+		langDisplay.innerHTML = lang;
+		langDisplay.style.display = "none";
+		// may implement this one day, but it hard
+		var hash = window.location.hash.substr(1);
+		if(langs.indexOf(hash) > -1){
+			showLanguage(hash);
+		}
+		else{
+			showLanguage("english");
+		}
+	}
+	
+	function hideAll(){
+		for(let i=0; i<langs.length; i++){
+			document.getElementById(langs[i]).style.display = "none";
+		}
+	}
+	
+	function showLanguage(showLang){
+		hideAll();
+		document.getElementById(showLang).style.display = "block";
+		window.location.hash = showLang;
+		window.scrollTo(0, 0);
+	}
+	
+	function toggleLight(){
+		var element = document.body;
+		element.classList.toggle("dark-body");
+		
+		tablestuff = document.getElementsByTagName('th');
+		for(var i = 0; i < tablestuff.length; i++) {
+			tablestuff[i].classList.toggle("dark-th");
+		}
+		tablestuff = document.getElementsByClassName('striped');
+		for(var i = 0; i < tablestuff.length; i++) {
+			tablestuff[i].classList.toggle("dark-table");
+		}
+	}
+
+	
+</script>
+
+</head>
+
+
+
+<!-- BODY -->
+<body style="margin-left:50px;margin-right:50px;" onload="onLoad()">
+
+<!-- TITLE -->
+<b>
+<a style="font-size:36px;font-family:sans-serif" href="dasopya.html">KUTOKOPO</a>
+</b>
+<br>
+<hr>
+<!-- END OF HEADER -->
+
+<div style="width:100%;"> <!--to make it proper width for some reason-->
+</div>
+
+<button onclick="showLanguage('dasopya')">dasopya</button>
+<button onclick="showLanguage('english')">English</button>
+||
+<button onclick="showLanguage('deutsch')">Deutsch</button>
+<button onclick="showLanguage('eesti_keel')">Eesti keel</button>
+<button onclick="showLanguage('espanol')">Español</button>
+<button onclick="showLanguage('francais')">Français</button>
+<button onclick="showLanguage('nederlands')">Nederlands</button>
+||
+<button onclick="showLanguage('esperanto')">Esperanto</button>
+<button onclick="showLanguage('tokipona')">toki pona</button>
+<button onclick="showLanguage('sitelenemoji')">🗣👍</button>
+<br /><br />
+<button onclick="toggleLight()" style="height:40px;width:40px;font-size:24px">💡</button>
+
+
+<p id="language">
+</p>
+
+<div id="dasopya">
+
+<br />
+<h1>sadilusi boy dasopya</h1>
+<hr> 
+<a href="dasopya.html">&lt; bebebuli telu gyu</a> <br />
+
+<br />
+
+ <table>
+  <tr>
+    <th>dasopya</th>
+    <th>-</th>
+  </tr>
+  <tr>
+    <td>dasopya i swa e pya teso i mye dwetona telu i swa e kwetose e kwepide telu dubi hoy poludaw hoy labe daso.</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>goy pyasahu i hay e kwetay sahu, sya e soy sibyegoy.</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>libudoli i swa e soytawbey, sya a polu libu i polulon tona e kwetaw toso.</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>goy i dole hay e kwetitu 800 gulo samu, teso i tey samuhapu hoy kwesepobey sya kwepidebey.</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>polu samu i mye dwetona doke soyhupyo; boysesey, i swa e soy petu hoy mey matu.</td>
+    <td>-</td>
+  </tr>
+</table> 
+
+<br />
+<h2>moygulo</h2>
+<hr> 
+
+<h3>
+libudoli sya pyatoso
+</h3>
+
+<p>
+polu libu i polulon kwetaw pyatoso. pene libu i hay e moy pyatoso boysoki pyadaw bawdani, bemyu sotuman pyatoso teso i swa e sotubey e bawdanibey. doylibu boy dasopya i soy sahibey.<br />
+</p>
+
+<table style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:10%">libu</th>
+    <th style="width:20%">oIPA</th>
+	<th>boymesi</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>/a/</td>
+	<td>kwetaw buki "a" boy "san"</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>/b/, /v/</td>
+	<td>kwetaw buki "b" boy "bay"</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>/d/, /ð̞/</td>
+	<td>kwetaw buki "d" boy "daw"</td>
+  </tr>
+  <tr>
+	<td>E</td>
+	<td>/e/</td>
+	<td>kwetaw buki "e" boy "deka"</td>
+  </tr>
+  <tr>
+	<td>G</td>
+	<td>/g/</td>
+	<td>kwetaw buki "g" boy "goy"</td>
+  </tr>
+  <tr>
+	<td>H</td>
+	<td>/h/, /x/, /ɾ/</td>
+	<td>kwetaw buki "h" boy "hito"</td>
+  </tr>
+  <tr>
+	<td>I</td>
+	<td>/i/</td>
+	<td>kwetaw buki "i" boy "pin"</td>
+  </tr>
+  <tr>
+	<td>K</td>
+	<td>/kʰ/, /k/</td>
+	<td>kwetaw buki "k" boy "koko"</td>
+  </tr>
+  <tr>
+	<td>L</td>
+	<td>/l/, /ɾ/</td>
+	<td>kwetaw buki "l" boy "lake"</td>
+  </tr>
+  <tr>
+	<td>M</td>
+	<td>/m/</td>
+	<td>kwetaw buki "m" boy "man"</td>
+  </tr>
+  <tr>
+	<td>N</td>
+	<td>/n/</td>
+	<td>kwetaw buki "n" boy "pana"</td>
+  </tr>
+  <tr>
+	<td>O</td>
+	<td>/o/</td>
+	<td>kwetaw buki "o" boy "lemo"</td>
+  </tr>
+  <tr>
+	<td>P</td>
+	<td>/pʰ/, /p/, /f/</td>
+	<td>kwetaw buki "p" boy "pay"</td>
+  </tr>
+  <tr>
+	<td>S</td>
+	<td>/s/, /θ/, /ʃ/, /z/</td>
+	<td>kwetaw buki "s" boy "sato"</td>
+  </tr>
+  <tr>
+	<td>T</td>
+	<td>/tʰ/, /t/</td>
+	<td>kwetaw buki "t" boy "toso"</td>
+  </tr>
+  <tr>
+	<td>U</td>
+	<td>/u/</td>
+	<td>kwetaw buki "u" boy "dun"</td>
+  </tr>
+  <tr>
+	<td>W</td>
+	<td>/w/, /u/, /v/</td>
+	<td>kwetaw buki "w" boy "kiwe" lodu "u" boy "dun"</td>
+  </tr>
+  <tr>
+	<td>Y</td>
+	<td>/j/, /i/</td>
+	<td>kwetaw buki "y" boy "seya" lodu "i" boy "pin"</td>
+  </tr>
+</table> 
+
+
+<p>
+polu samu (byetoy litosamu) i polu swa e bade boy kwesadi samupyabuko.<br />
+</p>
+
+<ul>
+<li><b>bamu</b> - baMU (/ba'mu/)</li>
+<li><b>dasopya</b> - dasoPYA (/daso'pja/)</li>
+</ul>
+
+<br />
+<h3>
+moysamu
+</h3>
+
+<p>
+samu i tey pyobey boy mey samubalu.<br />
+</p>
+
+<ul>
+<li><b>syo</b> - syogen, syobey, syosyu</li>
+</ul>
+
+<p>
+begu a dipu i soy syu e gibe, a pokaysamu i tey syabey.<br />
+</p>
+
+<ul>
+<li><b>syogen</b> - syo (gen hoy syo)</li>
+<li><b>syobey</b> - syo (bey telu syo)</li>
+<li><b>syosyu</b> - syo (i syu e syo)</li>
+</ul>
+
+<p>
+kwetoy syasamu, a samu i tey swa e moybey lodu kwemoybey.<br />
+</p>
+
+<ul>
+<li><b>koko</b> - koko, man koko, moy koko</li>
+<li><b>moy koko</b> - baw buki man koko</li>
+<li><b>man koko</b> - manbey koko</li>
+</ul>
+
+<p>
+litosamu i kwesepobey syubey boymohu sotuman pyo e sake samu, sya i kwesadi pyo e gulo samu.<br />
+</p>
+
+<ul>
+<li><b>tukatina</b> - tina hoy tuka</li>
+<li><b>kwepagi</b> - soy pagi</li>
+<li><b>musumodyokebo</b> - kebo hoy modyo hoy musu</li>
+</ul>
+
+<br />
+<h3>
+moymusyu
+</h3>
+
+<p>
+boy musyu, a "<b>a</b>" i kwesesey e sonsamu, a "<b>i</b>" i kwesesey e syusamu, sya a "<b>e</b>" i kwesesey e kwedesisamu. polulon a dipusamu i swa boydin sadigen.<br />
+</p>
+
+<ul>
+<li><b>pindin, a dey i mabo e kagay</b> ("dipusamu, [a] sonsamu [i] syusamu [e] kwedesisamu")</li>
+</ul>
+
+<p>
+goysakesamu i kwesesey e goysamu, sya a syusakesamu i kwesesey e syusamu. moypin swi sakesamu i soy hay e tawgen.<br />
+</p>
+
+<ul>
+<li><b>lase sapa i lase suki</b> ("goysakesamu goysamu [i] syusakesamu syusamu")</li>
+</ul>
+
+<p>
+myedinsamu i kwesesey e goysamu. <br />
+</p>
+
+<ul>
+<li><b>daw i sami law gemo</b> ("sonsamu [i] syusamu myedinsamu goysamu")</li>
+</ul>
+
+<br />
+<h3>
+pyasahu
+</h3>
+
+<p>
+<b>mye</b> i syu e mye lon, <b>dyu</b> i syu e dyu lon.<br />
+</p>
+
+<ul>
+<li><b>kyu i mye legi; bay i dyu legi</b> ("sonsamu [i] mye syusamu; sonsamu [i] dyu syusamu")</li>
+</ul>
+
+<p>
+syabey syusamu i sesey e taw syusamu.<br />
+</p>
+
+<ul>
+<li><b>swe i subi sedi plu</b> ("sonsamu [i] syusamu syusamu syusamu")</li>
+</ul>
+
+<p>
+<b>hoy</b> i simi e haybey, bemyu i bye tey tawsotu e sakesamu.<br />
+</p>
+
+<ul>
+<li><b>kopo hoy bay</b> ("kopo teso a bay i hay") - bay kopo </li>
+<li><b>kopo hoy lake</b> ("kopo teso i swa e lake") - lake kopo </li>
+</ul>
+
+<p>
+telu kaysyu, a musyu i sadi boymohu <b>kay</b> i lito <b>kya</b> toy kwelusigoy.<br />
+</p>
+
+<ul>
+<li><b>kay a kotu i swa e kya?</b> ("kay [a] sonsamu [i] syusamu [e] kwelusigoy?")</li>
+</ul>
+
+<p>
+<b>teso</b> i syu e soki musyubuko.<br />
+</p>
+
+<ul>
+<li><b>swe i dani e gwa teso i swa e gwi</b> ("sonsamu [i] syusamu [e] kwedesisamu teso [i] syusamu [e] kwedesisamu") - swe i dani e gwi gwa</li>
+</ul>
+
+<p>
+dasopya i tewi dokeseni e mey samu teso i swa e gibe doke dipu.<br />
+</p>
+
+<ul>
+<li><b>hapa e bote</b> - hapa (i swa) e bote</li>
+<li><b>i mapi</b> - (bay) i mapi</li>
+<li><b>e masu</b> - (maylon i swa) e masu</li>
+</ul>
+
+<p>
+"<b>u</b>" i simi e kwesemesay kwedesisamu.<br />
+</p>
+
+<ul>
+<li><b>i day e san u swe</b> ("[i] syusamu [e] semesay kwedesisamu [u] kwesemesay kwedesisamu")</li>
+</ul>
+
+<p>
+"<b>o</b>" i simi e mey samu teso i swa e kwelaw gulo samuhapu.<br />
+</p>
+
+<ul>
+<li><b>oKanada</b> - o "Canada"</li>
+<li><b>oPisa</b> - o "Pizza"</li>
+</ul>
+
+
+<br />
+<h3>
+gulobey moysamu
+</h3>
+
+<table class="striped" style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:30%">dasopya</th>
+    <th style="width:80%">-</th>
+  </tr>
+  <tr>
+    <td>pin</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>san</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>bay</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>kyu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>swe</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>daw</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lay</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>kwe</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>kate</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bamu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>gwi</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>dye</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>gadu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>swa</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>syu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>day</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>pya</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>plu</td>
+    <td>-</td>
+  </tr>
+ <tr>
+    <td>boti</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>tey</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>subi</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>polu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>tay</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>pene</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>moy</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>baw</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>buki</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>byu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>sya</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>lodu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>bemyu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>begu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>taku</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>kay</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>kya</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mye</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>dyu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>boy</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>telu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>doke</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>say</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>pay</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>gyu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>law</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>sye</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>byo</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>koy</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>mite</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>soy</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>man</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>swi</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>tya</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>pelo</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>kula</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>deli</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>bete</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>hopya</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>miko</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>ley</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>sehu</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>siku</td>
+    <td>1000</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bya</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>maw</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>domay</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>milu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>pana</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>loy</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>deka</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>paka</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>dey</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>matya</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>hugwa</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>pila</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>sapa</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>pasa</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>kikaw</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>hapa</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>gwa</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>gan</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>kiso</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>lado</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>pyo</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>doy</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>kumye</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>sike</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>lake</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>lamye</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>bote</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>kahe</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>buse</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lon</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>tonu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>loso</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>han</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>kotu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>mebyu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>busu</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mabo</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>bugo</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>kupa</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>hidwa</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>lano</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>simo</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>toki</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td></td>
+  </tr>
+</table> 
+
+<br /><br />
+<p style="color:grey;">
+pyabyo doke Vecderg. tiho moysake doke elefen.org
+</p>
+
+</div> <!-- end Dasopya section -->
+</div>
+
+<div id="english">
+
+<br />
+<h1>Introduction in English</h1>
+<hr> 
+<a href="dasopya.html">&lt; Back to Contents</a> <br />
+
+<br />
+
+ <table>
+  <tr>
+    <th>English</th>
+    <th>Dasopya</th>
+  </tr>
+  <tr>
+    <td>Dasopya is a language that was made to be simple and easy for anyone around the world to learn.</td>
+    <td>dasopya i swa e pya teso i mye dwetona telu i swa e kwetose e kwepide telu dubi hoy poludaw hoy labe daso.</td>
+  </tr>
+  <tr>
+    <td>Its grammar has few rules, and no exceptions.</td>
+    <td>goy pyasahu i hay e kwetay sahu, sya e soy sibyegoy.</td>
+  </tr>
+  <tr>
+    <td>Spelling is consistent, and every letter always makes the same sound.</td>
+    <td>libudoli i swa e soytawbey, sya a polu libu i polulon tona e kwetaw toso.</td>
+  </tr>
+  <tr>
+    <td>It only has about 800 root words, which can be compounded freely and easily.</td>
+    <td>goy i dole hay e kwetitu 800 gulo samu, teso i tey samuhapu hoy kwesepobey sya kwepidebey.</td>
+  </tr>
+  <tr>
+    <td>Every word was made from scratch, so that there is no bias towards any country.</td>
+    <td>polu samu i mye dwetona doke soyhupyo; boysesey, i swa e soy petu hoy mey matu.</td>
+  </tr>
+</table> 
+
+<br />
+<h2>Basics</h2>
+<hr> 
+
+<h3>
+Alphabet and Pronunciation
+</h3>
+
+<p>
+Every letter is always pronounced the same. Some letters have multiple pronunciations depending on speaker preference, but the first one listed is preferred. Capitalization in Dasopya is not required.<br />
+</p>
+
+<table style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:10%">Letter</th>
+    <th style="width:20%">IPA</th>
+	<th>Example</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>/a/</td>
+	<td>like "a" in "father"</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>/b/, /v/</td>
+	<td>like "b" in "boy"</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>/d/, /ð̞/</td>
+	<td>like "d" in "dip"</td>
+  </tr>
+  <tr>
+	<td>E</td>
+	<td>/e/</td>
+	<td>like "e" in "let"</td>
+  </tr>
+  <tr>
+	<td>G</td>
+	<td>/g/</td>
+	<td>like "g" in "good"</td>
+  </tr>
+  <tr>
+	<td>H</td>
+	<td>/h/, /x/, /ɾ/</td>
+	<td>like "h" in "hole"</td>
+  </tr>
+  <tr>
+	<td>I</td>
+	<td>/i/</td>
+	<td>like "i" in "ski"</td>
+  </tr>
+  <tr>
+	<td>K</td>
+	<td>/kʰ/, /k/</td>
+	<td>like "k" in "kite"</td>
+  </tr>
+  <tr>
+	<td>L</td>
+	<td>/l/, /ɾ/</td>
+	<td>like "l" in "log"</td>
+  </tr>
+  <tr>
+	<td>M</td>
+	<td>/m/</td>
+	<td>like "m" in "map"</td>
+  </tr>
+  <tr>
+	<td>N</td>
+	<td>/n/</td>
+	<td>like "n" in "nine"</td>
+  </tr>
+  <tr>
+	<td>O</td>
+	<td>/o/</td>
+	<td>like "o" in "more"</td>
+  </tr>
+  <tr>
+	<td>P</td>
+	<td>/pʰ/, /p/, /f/</td>
+	<td>like "p" in "peace"</td>
+  </tr>
+  <tr>
+	<td>S</td>
+	<td>/s/, /θ/, /ʃ/, /z/</td>
+	<td>like "s" in "sit"</td>
+  </tr>
+  <tr>
+	<td>T</td>
+	<td>/tʰ/, /t/</td>
+	<td>like "t" in "time"</td>
+  </tr>
+  <tr>
+	<td>U</td>
+	<td>/u/</td>
+	<td>like "u" in "flu"</td>
+  </tr>
+  <tr>
+	<td>W</td>
+	<td>/w/, /u/, /v/</td>
+	<td>like "w" in "win" or "u" in "flu"</td>
+  </tr>
+  <tr>
+	<td>Y</td>
+	<td>/j/, /i/</td>
+	<td>like "y" in "yes" or "i" in "ski"</td>
+  </tr>
+</table> 
+
+
+<p>
+Every word (including compound words) is always stressed on the last syllable.<br />
+</p>
+
+<ul>
+<li><b>bamu</b> (hello) - baMU (/ba'mu/)</li>
+<li><b>dasopya</b> (world-speak) - dasoPYA (/daso'pja/)</li>
+</ul>
+
+<br />
+<h3>
+Words
+</h3>
+
+<p>
+Words can be used as any part of speech.<br />
+</p>
+
+<ul>
+<li><b>syo</b> - life, alive, to live</li>
+</ul>
+
+<p>
+If context doesn't make it clear, suffixes can be added.<br />
+</p>
+
+<ul>
+<li><b>syogen</b> - life (life-concept)</li>
+<li><b>syobey</b> - alive (life-related)</li>
+<li><b>syosyu</b> - to live (life-do)</li>
+</ul>
+
+<p>
+There are no articles, and words can be singular or plural by default.<br />
+</p>
+
+<ul>
+<li><b>koko</b> - rock, rocks, the rock, a rock</li>
+<li><b>moy koko</b> - multiple rocks</li>
+<li><b>man koko</b> - one rock</li>
+</ul>
+
+<p>
+Compound words are formed freely by using describing words first, and the base word at the end.<br />
+</p>
+
+<ul>
+<li><b>tukatina</b> (foot-finger) - toe</li>
+<li><b>kwepagi</b> (opposite-open) - close</li>
+<li><b>musumodyokebo</b> (sleep-furniture-cover) - bedsheet</li>
+</ul>
+
+<br />
+<h3>
+Sentences
+</h3>
+
+<p>
+In sentences, "<b>a</b>" precedes subjects, "<b>i</b>" precedes verbs, and "<b>e</b>" precedes objects. Context always comes at the beginning. <br />
+</p>
+
+<ul>
+<li><b>pindin, a dey i mabo e kagay</b> ("this-place, [a] animal [i] food [e] grass") - Here, the animal eats grass</li>
+</ul>
+
+<p>
+Adjectives come before nouns, and adverbs come before verbs. Otherwise, they are identical. <br />
+</p>
+
+<ul>
+<li><b>lase sapa i lase suki</b> ("fast fish [i] fast swim") - Fast fish swim quickly </li>
+</ul>
+
+<p>
+Prepositions come before nouns. <br />
+</p>
+
+<ul>
+<li><b>daw i sami law gemo</b> ("person [i] walk in garden") - The person walks in the garden </li>
+</ul>
+
+<br />
+<h3>
+Grammar
+</h3>
+
+<p>
+<b>mye</b> forms past tense, <b>dyu</b> forms future tense.<br />
+</p>
+
+<ul>
+<li><b>kyu i mye legi; bay i dyu legi</b> ("you [i] already work; I [i] shall work") - You worked; I will work.</li>
+</ul>
+
+<p>
+Auxiliary verbs follow each other directly.<br />
+</p>
+
+<ul>
+<li><b>swe i subi sedi plu</b> ("they [i] should try go") - They should try to go </li>
+</ul>
+
+<p>
+<b>hoy</b> marks possession, but can also rearrange adjectives.<br />
+</p>
+
+<ul>
+<li><b>kopo hoy bay</b> ("book of me") - my book </li>
+<li><b>kopo hoy lake</b> ("book of red") - red book </li>
+</ul>
+
+<p>
+To form a question, begin the sentence with <b>kay</b> and attach <b>kya</b> to the unknown.<br />
+</p>
+
+<ul>
+<li><b>kay a kotu i swa e kya?</b> ("question [a] hour [i] is [e] what") - What time is it?</li>
+</ul>
+
+<p>
+<b>teso</b> can create a dependent clause, like "that" or "who."<br />
+</p>
+
+<ul>
+<li><b>swe i dani e gwa teso i swa e gwi</b> ("they [i] like [e] house that [i] is [e] good") - They like houses that are good</li>
+</ul>
+
+<p>
+Dasopya is pro-drop, allowing any word that is obvious from context to be omitted (or dropped).<br />
+</p>
+
+<ul>
+<li><b>hapa e bote</b> ("flower [e] blue") - The flower (is) blue</li>
+<li><b>i mapi</b> ("[i] understand") - (I) understand</li>
+<li><b>e masu</b> ("[e] morning") - (It is) morning</li>
+</ul>
+
+<p>
+"<b>u</b>" marks indirect objects.<br />
+</p>
+
+<ul>
+<li><b>i day e san u swe</b> ("[i] give [e] that [u] them") - Give that to them</li>
+</ul>
+
+<p>
+"<b>o</b>" marks any word outside the base vocabulary.<br />
+</p>
+
+<ul>
+<li><b>oKanada</b> - Canada</li>
+<li><b>oPisa</b> - Pizza</li>
+</ul>
+
+<br />
+<h3>
+Basic Words
+</h3>
+
+<table class="striped" style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:30%">Dasopya</th>
+    <th style="width:80%">English</th>
+  </tr>
+  <tr>
+    <td>pin</td>
+    <td>this</td>
+  </tr>
+  <tr>
+    <td>san</td>
+    <td>that</td>
+  </tr>
+  <tr>
+    <td>bay</td>
+    <td>I, me</td>
+  </tr>
+  <tr>
+    <td>kyu</td>
+    <td>you (singular, plural)</td>
+  </tr>
+  <tr>
+    <td>swe</td>
+    <td>they (singular, plural)</td>
+  </tr>
+  <tr>
+    <td>daw</td>
+    <td>person, individual (noun), one (pronoun)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lay</td>
+    <td>yes</td>
+  </tr>
+  <tr>
+    <td>kwe</td>
+    <td>(inversion prefix), no, opposite</td>
+  </tr>
+  <tr>
+    <td>kate</td>
+    <td>correct, accurate, right</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bamu</td>
+    <td>hello, greeting, goodbye</td>
+  </tr>
+  <tr>
+    <td>gwi</td>
+    <td>good</td>
+  </tr>
+  <tr>
+    <td>dye</td>
+    <td>bad</td>
+  </tr>
+  <tr>
+    <td>gadu</td>
+    <td>thanks, gratitude</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>swa</td>
+    <td>is, am, to be</td>
+  </tr>
+  <tr>
+    <td>syu</td>
+    <td>to do, make</td>
+  </tr>
+  <tr>
+    <td>day</td>
+    <td>to give, grant, award, emit</td>
+  </tr>
+  <tr>
+    <td>pya</td>
+    <td>to speak, to talk, speech, language, animal sound</td>
+  </tr>
+  <tr>
+    <td>plu</td>
+    <td>to move, to go</td>
+  </tr>
+ <tr>
+    <td>boti</td>
+    <td>to want, desire, intention, will</td>
+  </tr>
+  <tr>
+    <td>tey</td>
+    <td>can, be able to, may, -able</td>
+  </tr>
+  <tr>
+    <td>subi</td>
+    <td>must, should, obligation, have to</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>polu</td>
+    <td>everything, all, every, any, each</td>
+  </tr>
+  <tr>
+    <td>tay</td>
+    <td>many, very, really, much, a lot</td>
+  </tr>
+  <tr>
+    <td>pene</td>
+    <td>some, somewhat, rather, pretty</td>
+  </tr>
+  <tr>
+    <td>moy</td>
+    <td>multiple</td>
+  </tr>
+  <tr>
+    <td>baw</td>
+    <td>more</td>
+  </tr>
+  <tr>
+    <td>buki</td>
+    <td>compare, as, than, relatively</td>
+  </tr>
+  <tr>
+    <td>byu</td>
+    <td>most (superlative)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>sya</td>
+    <td>and, plus, add, also, additionally</td>
+  </tr>
+  <tr>
+    <td>lodu</td>
+    <td>or, either</td>
+  </tr>
+  <tr>
+    <td>bemyu</td>
+    <td>but, however</td>
+  </tr>
+  <tr>
+    <td>begu</td>
+    <td>if, hypothetically, scenario</td>
+  </tr>
+  <tr>
+    <td>taku</td>
+    <td>cause, because, origin, from (due to)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>kay</td>
+    <td>question, (question marker)</td>
+  </tr>
+  <tr>
+    <td>kya</td>
+    <td>what, which</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mye</td>
+    <td>already, before, (past tense marker)</td>
+  </tr>
+  <tr>
+    <td>dyu</td>
+    <td>shall, after, (future tense marker)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>boy</td>
+    <td>for, at, of, in, on, (preposition marker)</td>
+  </tr>
+  <tr>
+    <td>telu</td>
+    <td>to, for (destination, goal), in order to</td>
+  </tr>
+  <tr>
+    <td>doke</td>
+    <td>from, off (of), (out) of</td>
+  </tr>
+  <tr>
+    <td>say</td>
+    <td>direction, towards, to, guidance, orientation</td>
+  </tr>
+  <tr>
+    <td>pay</td>
+    <td>above, up, over, on top, lift (something), rise</td>
+  </tr>
+  <tr>
+    <td>gyu</td>
+    <td>front, in front</td>
+  </tr>
+  <tr>
+    <td>law</td>
+    <td>in, inside</td>
+  </tr>
+  <tr>
+    <td>sye</td>
+    <td>side, adjacent</td>
+  </tr>
+  <tr>
+    <td>byo</td>
+    <td>through, across, trans-</td>
+  </tr>
+  <tr>
+    <td>koy</td>
+    <td>far, tele-</td>
+  </tr>
+  <tr>
+    <td>mite</td>
+    <td>between, among, inter-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>soy</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>man</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>swi</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>tya</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>pelo</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>kula</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>deli</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>bete</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>hopya</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>miko</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>ley</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>sehu</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>siku</td>
+    <td>1000</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bya</td>
+    <td>male, man, boy</td>
+  </tr>
+  <tr>
+    <td>maw</td>
+    <td>female, woman, girl</td>
+  </tr>
+  <tr>
+    <td>domay</td>
+    <td>friend</td>
+  </tr>
+  <tr>
+    <td>milu</td>
+    <td>love</td>
+  </tr>
+  <tr>
+    <td>pana</td>
+    <td>hand, handle, to hold</td>
+  </tr>
+  <tr>
+    <td>loy</td>
+    <td>eye, to see, watch, look</td>
+  </tr>
+  <tr>
+    <td>deka</td>
+    <td>ear, hear, listen</td>
+  </tr>
+  <tr>
+    <td>paka</td>
+    <td>head, leader</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>dey</td>
+    <td>animal, creature</td>
+  </tr>
+  <tr>
+    <td>matya</td>
+    <td>cat, feline</td>
+  </tr>
+  <tr>
+    <td>hugwa</td>
+    <td>dog, canine</td>
+  </tr>
+  <tr>
+    <td>pila</td>
+    <td>bird</td>
+  </tr>
+  <tr>
+    <td>sapa</td>
+    <td>fish</td>
+  </tr>
+  <tr>
+    <td>pasa</td>
+    <td>plant, to plant</td>
+  </tr>
+  <tr>
+    <td>kikaw</td>
+    <td>tree</td>
+  </tr>
+  <tr>
+    <td>hapa</td>
+    <td>flower</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>gwa</td>
+    <td>building, house, to build, to construct</td>
+  </tr>
+  <tr>
+    <td>gan</td>
+    <td>room</td>
+  </tr>
+  <tr>
+    <td>kiso</td>
+    <td>chair, sit</td>
+  </tr>
+  <tr>
+    <td>lado</td>
+    <td>table, desk</td>
+  </tr>
+  <tr>
+    <td>pyo</td>
+    <td>to use</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>doy</td>
+    <td>big</td>
+  </tr>
+  <tr>
+    <td>kumye</td>
+    <td>long, length</td>
+  </tr>
+  <tr>
+    <td>sike</td>
+    <td>color, hue</td>
+  </tr>
+  <tr>
+    <td>lake</td>
+    <td>red</td>
+  </tr>
+  <tr>
+    <td>lamye</td>
+    <td>yellow</td>
+  </tr>
+  <tr>
+    <td>bote</td>
+    <td>blue</td>
+  </tr>
+  <tr>
+    <td>kahe</td>
+    <td>black</td>
+  </tr>
+  <tr>
+    <td>buse</td>
+    <td>white</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lon</td>
+    <td>time, when</td>
+  </tr>
+  <tr>
+    <td>tonu</td>
+    <td>year</td>
+  </tr>
+  <tr>
+    <td>loso</td>
+    <td>moon, month</td>
+  </tr>
+  <tr>
+    <td>han</td>
+    <td>day, date</td>
+  </tr>
+  <tr>
+    <td>kotu</td>
+    <td>hour</td>
+  </tr>
+  <tr>
+    <td>mebyu</td>
+    <td>minute</td>
+  </tr>
+  <tr>
+    <td>busu</td>
+    <td>second</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mabo</td>
+    <td>food, meal, to eat, to consume</td>
+  </tr>
+  <tr>
+    <td>bugo</td>
+    <td>drink, to drink</td>
+  </tr>
+  <tr>
+    <td>kupa</td>
+    <td>fruit</td>
+  </tr>
+  <tr>
+    <td>hidwa</td>
+    <td>vegetable</td>
+  </tr>
+  <tr>
+    <td>lano</td>
+    <td>bread, loaf, bun</td>
+  </tr>
+  <tr>
+    <td>simo</td>
+    <td>rice</td>
+  </tr>
+  <tr>
+    <td>toki</td>
+    <td>to cook</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td></td>
+  </tr>
+</table> 
+
+<br /><br />
+<p style="color:grey;">
+Translated by Vecderg. Page style based on elefen.org
+</p>
+
+</div> <!-- end English section -->
+
+<div id="esperanto">
+
+<br />
+<h1>Enkonduko en Esperanto</h1>
+<hr>
+<a href="dasopya.html">&lt; Reiru al Enhavo</a> <br />
+
+<br />
+
+ <table>
+ <tr>
+ <th>Esperanto</th>
+ <th>Dasopya</th>
+ </tr>
+ <tr>
+ <td>Dasopya estas lingvo kiu estis farita por esti simpla kaj facile lernebla por ĉiuj ĉirkaŭ la mondo.</td>
+ <td>dasopya i swa e pya teso i mye dwetona telu i swa e kwetose e kwepide telu dubi hoy poludaw hoy labe daso.</td>
+ </tr>
+ <tr>
+ <td>Ĝia gramatiko havas malmultajn regulojn, kaj neniujn esceptojn.</td>
+ <td>goy pyasahu i hay e kwetay sahu, sya e soy sibyegoy.</td>
+ </tr>
+ <tr>
+ <td>Literumo estas konsekvenca, kaj ĉiu litero ĉiam prononciĝas per la sama sono.</td>
+ <td>libudoli i swa e soytawbey, sya a polu libu i polulon tona e kwetaw toso.</td>
+ </tr>
+ <tr>
+ <td>Ĝi havas nur 800 radikvortojn, kiuj povas esti kunmetitaj libere kaj facile.</td>
+ <td>goy i dole hay e kwetitu 800 gulo samu, teso i tey samuhapu hoy kwesepobey sya kwepidebey.</td>
+ </tr>
+ <tr>
+ <td>Ĉiu vorto estis farita el nenio, tiel ke ne ekzistas antaŭjuĝo favore al iu ajn lando.</td>
+ <td>polu samu i mye dwetona doke soyhupyo; boysesey, i swa e soy petu hoy mey matu.</td>
+ </tr>
+</table>
+
+<br />
+<h2>Bazaj</h2>
+<hr>
+
+<h3>
+Alfabeto kaj Prononco
+</h3>
+
+<p>
+Ĉiu litero estas ĉiam prononcata same. Iuj literoj havas multoblajn prononcojn depende de la prefero de parolanto, sed la unua listigita estas preferita. Majuskligo en Dasopya ne estas bezonata.<br />
+</p>
+
+<table style="width:50%; margin-left:0px;">
+ <tr>
+ <th style="width:10%">Litero</th>
+ <th style="width:20%">IPA</th>
+  <th>Prononco</th>
+ </tr>
+ <tr>
+ <td>A</td>
+ <td>/a/</td>
+  <td>A</td>
+ </tr>
+ <tr>
+ <td>B</td>
+ <td>/b/, /v/</td>
+  <td>B</td>
+ </tr>
+ <tr>
+ <td>D</td>
+ <td>/d/, /ð̞/</td>
+  <td>D</td>
+ </tr>
+ <tr>
+  <td>E</td>
+  <td>/e/</td>
+  <td>E</td>
+ </tr>
+ <tr>
+  <td>G</td>
+  <td>/g/</td>
+  <td>G</td>
+ </tr>
+ <tr>
+  <td>H</td>
+  <td>/h/, /x/, /ɾ/</td>
+  <td>H</td>
+ </tr>
+ <tr>
+  <td>I</td>
+  <td>/i/</td>
+  <td>I</td>
+ </tr>
+ <tr>
+  <td>K</td>
+  <td>/kʰ/, /k/</td>
+  <td>K</td>
+ </tr>
+ <tr>
+  <td>L</td>
+  <td>/l/, /ɾ/</td>
+  <td>L</td>
+ </tr>
+ <tr>
+  <td>M</td>
+  <td>/m/</td>
+  <td>M</td>
+ </tr>
+ <tr>
+  <td>N</td>
+  <td>/n/</td>
+  <td>N</td>
+ </tr>
+ <tr>
+  <td>O</td>
+  <td>/o/</td>
+  <td>O</td>
+ </tr>
+ <tr>
+  <td>P</td>
+  <td>/pʰ/, /p/, /f/</td>
+  <td>P</td>
+ </tr>
+ <tr>
+  <td>S</td>
+  <td>/s/, /θ/, /ʃ/, /z/</td>
+  <td>S</td>
+ </tr>
+ <tr>
+  <td>T</td>
+  <td>/tʰ/, /t/</td>
+  <td>T</td>
+ </tr>
+ <tr>
+  <td>U</td>
+  <td>/u/</td>
+  <td>U</td>
+ </tr>
+ <tr>
+  <td>W</td>
+  <td>/w/, /u/, /v/</td>
+  <td>Ŭ aŭ U</td>
+ </tr>
+ <tr>
+  <td>Y</td>
+  <td>/j/, /i/</td>
+  <td>J aŭ I</td>
+ </tr>
+</table>
+
+
+<p>
+Ĉiu vorto (inkluzive de kunmetitaj vortoj) estas ĉiam akcentata sur la lasta silabo.<br />
+</p>
+
+<ul>
+<li><b>bamu</b> (saluton) - baMU (/ba'mu/)</li>
+<li><b>dasopya</b> (mondo-paroli) - dasoPYA (/daso'pja/)</li>
+</ul>
+
+<br />
+<h3>
+Vortoj
+</h3>
+
+<p>
+Vortoj povas esti uzataj kiel ajna vortparto.<br />
+</p>
+
+<ul>
+<li><b>syo</b> - vivo, viva, vivi</li>
+</ul>
+
+<p>
+Se la kunteksto ne klarigas, oni povas aldoni sufiksojn.<br />
+</p>
+
+<ul>
+<li><b>syogen</b> - vivo (vivo-koncepto)</li>
+<li><b>syobey</b> - viva (vivo-rilata)</li>
+<li><b>syosyu</b> - vivi (vivo-fari)</li>
+</ul>
+
+<p>
+Ne ekzistas artikoloj, kaj vortoj povas esti unuopaj aŭ pluralaj defaŭlte.<br />
+</p>
+
+<ul>
+<li><b>koko</b> - roko, rokoj, la roko</li>
+<li><b>moy koko</b> - multoblaj rokoj</li>
+<li><b>man koko</b> - unu roko</li>
+</ul>
+
+<p>
+Kunmetitaj vortoj estas libere formitaj. Priskribaj vortoj uziĝas unue, kaj fine la bazvortoj.<br />
+</p>
+
+<ul>
+<li><b>tukatina</b> (piedo-fingro) - piedfingro</li>
+<li><b>kwepagi</b> (kontraŭ-malfermi) - fermi</li>
+<li><b>musumodyokebo</b> (dormo-meblo-kovrilo) - littuko</li>
+</ul>
+
+<br />
+<h3>
+Frazoj
+</h3>
+
+<p>
+En frazoj, "<b>a</b>" antaŭas subjektojn, "<b>i</b>" antaŭas verbojn, kaj "<b>e</b>" antaŭas objektojn. Kunteksto ĉiam venas ĉe la komenco. <br />
+</p>
+
+<ul>
+<li><b>pindin, a dey i mabo e kagay</b> ("ĉi-loko, [a] besto [i] manĝaĵo [e] herbo") - Ĉi tie, la besto manĝas herbon</li>
+</ul>
+
+<p>
+Adjektivoj venas antaŭ substantivoj, kaj adverboj venas antaŭ verboj. Alie, ili estas identaj. <br />
+</p>
+
+<ul>
+<li><b>lase sapa i lase suki</b> ("rapida fiŝo [i] rapida naĝi") - Rapida fiŝo naĝas rapide </li>
+</ul>
+
+<p>
+Prepozicioj venas antaŭ substantivoj. <br />
+</p>
+
+<ul>
+<li><b>daw i sami law gemo</b> ("persono [i] promeni en ĝardeno") - La persono promenas en la ĝardeno </li>
+</ul>
+
+<br />
+<h3>
+Gramatiko
+</h3>
+
+<p>
+<b>mye</b> formas pasintan tempon, <b>dyu</b> formas estontecon.<br />
+</p>
+
+<ul>
+<li><b>kyu i mye legi; bay i dyu legi</b> ("vi [i] jam labori; mi [i] post labori") - Vi laboris; Mi laboros.</li>
+</ul>
+
+<p>
+Helpverboj rekte sekvas unu la alian.<br />
+</p>
+
+<ul>
+<li><b>swe i subi sedi plu</b> ("ri [i] devi provi iri") - Ri devus provi iri </li>
+</ul>
+
+<p>
+<b>hoy</b> markas posedon, sed ankaŭ povas rearanĝi adjektivojn.<br />
+</p>
+
+<ul>
+<li><b>kopo hoy bay</b> ("libro de mi") - mia libro </li>
+<li><b>kopo hoy lago</b> ("libro de ruĝa") - ruĝa libro </li>
+</ul>
+
+<p>
+Por formi demandon, komencu la frazon per <b>kay</b> kaj aligu <b>kya</b> al la nekonataĵo.<br />
+</p>
+
+<ul>
+<li><b>kay a kotu i swa e kya?</b> ("demando [a] horo [i] estas [e] kio") - Kioma horo estas?</li>
+</ul>
+
+<p>
+<b>teso</b> povas krei dependan subfrazon, kiel "ke" aŭ "kiu."<br />
+</p>
+
+<ul>
+<li><b>swe i dani e gwa teso i swa e gwi</b> ("ri [i] ŝatas [e] domo kiu [i] estas [e] bona") - Ri ŝatas domojn kiuj estas bonaj</li>
+</ul>
+
+<p>
+Dasopya estas senanafora (<i>pro-drop</i>) lingvo, do ĝi permesas ellasi ajnan vorton kiu evidente kompreneblas el la kunteksto.<br />
+</p>
+
+<ul>
+<li><b>hapa e bote</b> ("floro [e] blua") - La floro (estas) blua</li>
+<li><b>i mapi</b> ("[i] kompreni") - (Mi) komprenas</li>
+<li><b>e masu</b> ("[e] mateno") - (Estas) mateno</li>
+</ul>
+
+<p>
+"<b>u</b>" markas nerektajn objektojn.<br />
+</p>
+
+<ul>
+<li><b>i day e san u swe</b> ("[i] doni [e] tiu [u] ri") - Donu tion al ri</li>
+</ul>
+
+<p>
+"<b>o</b>" markas ajnan vorton ekster la baza vortprovizo.<br />
+</p>
+
+<ul>
+<li><b>oKanada</b> - Kanado</li>
+<li><b>oPisa</b> - Pico</li>
+</ul>
+
+<br />
+<h3>
+Bazaj Vortoj
+</h3>
+
+<table class="striped" style="width:50%; margin-left:0px;">
+ <tr>
+ <th style="width:30%">Dasopya</th>
+ <th style="width:80%">Esperanto</th>
+ </tr>
+ <tr>
+ <td>pin</td>
+ <td>ĉi tio</td>
+ </tr>
+ <tr>
+ <td> san</td>
+ <td>tio, tiu</td>
+ </tr>
+ <tr>
+ <td>bay</td>
+ <td>mi</td>
+ </tr>
+ <tr>
+ <td>kyu</td>
+ <td>vi (singularo, pluralo)</td>
+ </tr>
+ <tr>
+ <td>swe</td>
+ <td>ri, li, ŝi, ili</td>
+ </tr>
+ <tr>
+ <td>daw</td> 
+ <td>persono, individuo, oni</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>lay</td>
+ <td>jes</td>
+ </tr>
+ <tr>
+ <td>kwe</td>
+ <td>(inversa prefikso), ne, malo</td>
+ </tr>
+ <tr>
+ <td>kate</td>
+ <td>ĝusta, preciza, prava</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>bamu</td>
+ <td>saluton, adiaŭ</td>
+ </tr>
+ <tr>
+ <td>gwi</td>
+ <td>bona</td>
+ </tr>
+ <tr>
+ <td>dye</td>
+ <td>malbona</td>
+ </tr>
+ <tr>
+ <td>gadu</td>
+ <td>dankon, dankemo</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>swa</td>
+ <td>esti</td>
+ </tr>
+ <tr>
+ <td>syu</td>
+ <td>fari</td>
+ </tr>
+ <tr>
+ <td>day</td>
+ <td>doni, premii, elsendi</td>
+ </tr>
+ <tr>
+ <td>pya</td>
+ <td>paroli, parolo, lingvo, besta sono</td>
+ </tr>
+ <tr>
+ <td>plu</td>
+ <td>movi, iri</td>
+ </tr>
+ <tr>
+ <td>boti</td>
+ <td>voli, deziri, intenco, volo</td>
+ </tr>
+ <tr>
+ <td>tey</td>
+ <td>povi, -ebla</td>
+ </tr>
+ <tr>
+ <td>subi</td>
+ <td>devi</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>polu</td>
+ <td>ĉio, ĉiu</td>
+ </tr>
+ <tr>
+ <td>tay</td>
+ <td>multaj, tre, vere, multe</td>
+ </tr>
+ <tr>
+ <td>pene</td>
+ <td>iuj, iom, sufiĉe</td>
+ </tr>
+ <tr>
+ <td>moy</td>
+ <td>multobla</td>
+ </tr>
+ <tr>
+ <td>baw</td>
+ <td>pli</td>
+ </tr>
+ <tr>
+ <td>buki</td>
+ <td>kompari, kiel, ol, relative</td>
+ </tr>
+ <tr>
+ <td>byu</td>
+ <td>plej</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>sya</td>
+ <td>kaj, plus, aldoni, ankaŭ, aldone</td>
+ </tr>
+ <tr>
+ <td>lodu</td>
+ <td>aŭ, ĉu</td>
+ </tr>
+ <tr>
+ <td>bemyu</td>
+ <td>sed, tamen</td>
+ </tr>
+ <tr>
+ <td>begu</td>
+ <td>se, hipoteze, scenaro</td>
+ </tr>
+ <tr>
+ <td>taku</td>
+ <td>kaŭzo, ĉar, deveno, pro</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>kay</td>
+ <td>demando, ĉu</td>
+ </tr>
+ <tr>
+ <td>kya</td>
+ <td>kio</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>mye</td>
+ <td>jam, antaŭe, (markilo de pasinta tempo)</td>
+ </tr>
+ <tr>
+ <td>dyu</td>
+ <td>post, (markilo de estonta tempo)</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>boy</td>
+ <td>je; por, ĉe, de, en, sur, (prepozicia markilo)</td>
+ </tr>
+ <tr>
+ <td>telu</td>
+ <td>por, al</td>
+ </tr>
+ <tr>
+ <td>doke</td>
+ <td>de, for (de), el</td>
+ </tr>
+ <tr>
+ <td>say</td>
+ <td>direkto, al, al, gvidado, orientiĝo</td>
+ </tr>
+ <tr>
+ <td>pay</td>
+ <td>supre, supren, super, levi, leviĝi</td>
+ </tr>
+ <tr>
+ <td>gyu</td>
+ <td>antaŭe, antaŭ</td>
+ </tr>
+ <tr>
+ <td>law</td>
+ <td>en, interne</td>
+ </tr>
+ <tr>
+ <td>sye</td>
+ <td>apuda, flanko</td>
+ </tr>
+ <tr>
+ <td>byo</td>
+ <td> tra, trans, trans-</td>
+ </tr>
+ <tr>
+ <td>koy</td>
+ <td>malproksime, tele-</td>
+ </tr>
+ <tr>
+ <td>mite</td>
+ <td>inter, inter-</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>soy</td>
+ <td>0</td>
+ </tr>
+ <tr>
+ <td>man</td>
+ <td>1</td>
+ </tr>
+ <tr>
+ <td>swi</td>
+ <td>2</td>
+ </tr>
+ <tr>
+ <td>tya</td>
+ <td>3</td>
+ </tr>
+ <tr>
+ <td>pelo</td>
+ <td>4</td>
+ </tr>
+ <tr>
+ <td>kula</td>
+ <td>5</td>
+ </tr>
+ <tr>
+ <td>deli</td>
+ <td>6</td>
+ </tr>
+ <tr>
+ <td>bete</td>
+ <td>7</td>
+ </tr>
+ <tr>
+ <td>hopya</td>
+ <td>8</td>
+ </tr>
+ <tr>
+ <td>miko</td>
+ <td>9</td>
+ </tr>
+ <tr>
+ <td>ley</td>
+ <td>10</td>
+ </tr>
+ <tr>
+ <td>sehu</td>
+ <td>100</td>
+ </tr>
+ <tr>
+ <td>siku</td>
+ <td>1000</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>bya</td>
+ <td>vira, viro, knabo</td>
+ </tr>
+ <tr>
+ <td>maw</td>
+ <td>ina, virino, knabino</td>
+ </tr>
+ <tr>
+ <td>domay</td>
+ <td>amiko</td>
+ </tr>
+ <tr>
+ <td>milu</td>
+ <td>amo</td>
+ </tr>
+ <tr>
+ <td>pana</td>
+ <td>mano, tenilo, teni</td>
+ </tr>
+ <tr>
+ <td>loy</td>
+ <td>okulo, vidi, rigardi</td>
+ </tr>
+ <tr>
+ <td>deka</td>
+ <td>orelo, aŭdi, aŭskulti</td>
+ </tr>
+ <tr>
+ <td>paka</td>
+ <td>kapo, gvidanto</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>dey</td>
+ <td>animalo, besto</td>
+ </tr>
+ <tr>
+ <td>matya</td>
+ <td>kato, felino</td>
+ </tr>
+ <tr>
+ <td>hugwa</td>
+ <td>hundo</td>
+ </tr>
+ <tr>
+ <td>pila</td>
+ <td>birdo</td>
+ </tr>
+ <tr>
+ <td>sapa</td>
+ <td>fiŝo</td>
+ </tr>
+ <tr>
+ <td>pasa</td>
+ <td>planto, planti</td>
+ </tr>
+ <tr>
+ <td>kikaw</td>
+ <td>arbo</td>
+ </tr>
+ <tr>
+ <td>hapa</td>
+ <td>floro</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>gwa</td>
+ <td>konstruado, domo, konstrui</td>
+ </tr>
+ <tr>
+ <td>gan</td>
+ <td>ĉambro</td>
+ </tr>
+ <tr>
+ <td>kiso</td>
+ <td>seĝo, sidi</td>
+ </tr>
+ <tr>
+ <td>lado</td>
+ <td>table, skribotable</td>
+ </tr>
+ <tr>
+ <td>pyo</td>
+ <td>uzi</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>doy</td>
+ <td>granda</td>
+ </tr>
+ <tr>
+ <td>kumye</td>
+ <td>longa, longo</td>
+ </tr>
+ <tr>
+ <td>sike</td>
+ <td>koloro</td>
+ </tr>
+ <tr>
+ <td>lake</td>
+ <td>ruĝa</td>
+ </tr>
+ <tr>
+ <td>lamye</td>
+ <td>flava</td>
+ </tr>
+ <tr>
+ <td>bote</td>
+ <td>blua</td>
+ </tr>
+ <tr>
+ <td>kahe</td>
+ <td>nigra</td>
+ </tr>
+ <tr>
+ <td>buse</td>
+ <td>blanka</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>lon</td>
+ <td>tempo, kiam</td>
+ </tr>
+ <tr>
+ <td>tonu</td>
+ <td>jaro</td>
+ </tr>
+ <tr>
+ <td>loso</td>
+ <td>luno, monato</td>
+ </tr>
+ <tr>
+ <td>han</td>
+ <td>tago, dato</td>
+ </tr>
+ <tr>
+ <td>kotu</td>
+ <td>horo</td>
+ </tr>
+ <tr>
+ <td>mebyu</td>
+ <td>minuto</td>
+ </tr>
+ <tr>
+ <td>busu</td>
+ <td>sekundo</td>
+ </tr>
+ <tr>
+ <td>-</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td>mabo</td>
+ <td>manĝaĵo, manĝo, manĝi, konsumi</td>
+ </tr>
+ <tr>
+ <td>bugo</td>
+ <td>trinkaĵo, trinki</td>
+ </tr>
+ <tr>
+ <td>kupa</td>
+ <td>frukto</td>
+ </tr>
+ <tr>
+ <td>hidwa</td>
+ <td>legomo</td>
+ </tr>
+ <tr>
+ <td>lano</td>
+ <td>pano, bulko</td>
+ </tr>
+ <tr>
+ <td>simo</td>
+ <td>rizo</td>
+ </tr>
+ <tr>
+ <td>toki</td>
+ <td>kuiri</td>
+ </tr>
+ <tr>
+ <td>...</td>
+ <td></td>
+ </tr>
+</table>
+
+<br /><br />
+<p style="color:grey;">
+Tradukis Vecderg kaj Google Translate. Paĝa stilo bazita sur elefen.org <br />
+Kromaj kontribuoj de volta8752 kaj yisangdek.
+</p>
+
+</div> 
+<!-- end Esperanto section -->
+
+<div id="deutsch">
+
+<br />
+<h1>Einführung auf Deutsch</h1>
+<hr> 
+<a href="dasopya.html">&lt; Zurück zum Inhalt</a> <br />
+
+<br />
+
+ <table>
+  <tr>
+    <th>Deutsch</th>
+    <th>Dasopya</th>
+  </tr>
+  <tr>
+    <td>Dasopya ist eine Sprache, die kreiert wurde, um für jeden auf der Welt leicht zu erlernen zu sein.</td>
+    <td>dasopya i swa e pya teso i mye dwetona telu i swa e kwetose e kwepide telu dubi hoy poludaw hoy labe daso.</td>
+  </tr>
+  <tr>
+    <td>Die Grammatik hat wenige Regeln und keine Ausnahmen.</td>
+    <td>goy pyasahu i hay e kwetay sahu, sya e soy sibyegoy.</td>
+  </tr>
+  <tr>
+    <td>Die Orthographie ist gleichbleibend und jeder Buchstabe hat immer dieselbe Aussprache.</td>
+    <td>libudoli i swa e soytawbey, sya a polu libu i polulon tona e kwetaw toso.</td>
+  </tr>
+  <tr>
+    <td>Es hat nur ungefähr 800 Stammwörter, die frei und einfach zusammengesetzt werden können.</td>
+    <td>goy i dole hay e kwetitu 800 gulo samu, teso i tey samuhapu hoy kwesepobey sya kwepidebey.</td>
+  </tr>
+  <tr>
+    <td>Jedes Wort ist von Grund auf neu gemacht, sodass kein Land irgendeinen Vorteil hat.</td>
+    <td>polu samu i mye dwetona doke soyhupyo; boysesey, i swa e soy petu hoy mey matu.</td>
+  </tr>
+</table> 
+
+<br />
+<h2>Grundlagen</h2>
+<hr> 
+
+<h3>
+Alphabet und Aussprache
+</h3>
+
+<p>
+Jeder Buchstabe wird immer auf dieselbe Weise ausgesprochen. Einige Buchstaben haben unterschiedliche Möglichkeiten der Aussprache, je nachdem, was der/die Sprechende bevorzugt, aber die erste aufgelistete Art ist empfohlen. Großschreibung ist in Dasopya nicht nötig.<br />
+</p>
+
+<table style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:10%">Buchstabe</th>
+    <th style="width:20%">IPA</th>
+	<th>Beispiel</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>/a/</td>
+	<td>wie ‘a’ in ‘Vater’</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>/b/, /v/</td>
+	<td>wie ‘b’ in ‘Bauer’</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>/d/, /ð̞/</td>
+	<td>wie ‘d’ in ‘Dunst’</td>
+  </tr>
+  <tr>
+	<td>E</td>
+	<td>/e/</td>
+	<td>wie 'e' in ‘Bett’</td>
+  </tr>
+  <tr>
+	<td>G</td>
+	<td>/g/</td>
+	<td>wie 'g' in ‘gut’</td>
+  </tr>
+  <tr>
+	<td>H</td>
+	<td>/h/, /x/, /ɾ/</td>
+	<td>wie 'h' in ‘Haus’</td>
+  </tr>
+  <tr>
+	<td>I</td>
+	<td>/i/</td>
+	<td>wie ’i’ in ‘Sinologie’</td>
+  </tr>
+  <tr>
+	<td>K</td>
+	<td>/kʰ/, /k/</td>
+	<td>wie ‘k’ in ‘Kampf’</td>
+  </tr>
+  <tr>
+	<td>L</td>
+	<td>/l/, /ɾ/</td>
+	<td>wie ‘l’ in ‘laut’</td>
+  </tr>
+  <tr>
+	<td>M</td>
+	<td>/m/</td>
+	<td>wie ‘m’ in ‘Matte’</td>
+  </tr>
+  <tr>
+	<td>N</td>
+	<td>/n/</td>
+	<td>wie ‘n’ in ‘nein’</td>
+  </tr>
+  <tr>
+	<td>O</td>
+	<td>/o/</td>
+	<td>wie ‘o’ in ‘Sonne’</td>
+  </tr>
+  <tr>
+	<td>P</td>
+	<td>/pʰ/, /p/, /f/</td>
+	<td>wie ‘p’ in ‘Putz’</td>
+  </tr>
+  <tr>
+	<td>S</td>
+	<td>/s/, /θ/, /ʃ/, /z/</td>
+	<td>wie ‘s’ in ‘Wasser’</td>
+  </tr>
+  <tr>
+	<td>T</td>
+	<td>/tʰ/, /t/</td>
+	<td>wie ‘t’ in ‘tapfer’</td>
+  </tr>
+  <tr>
+	<td>U</td>
+	<td>/u/</td>
+	<td>wie ‘u’ in ‘Schuh’</td>
+  </tr>
+  <tr>
+	<td>W</td>
+	<td>/w/, /u/, /v/</td>
+	<td>wie ‘w’ in ‘wow’ oder ‘u’ in ‘Schuh’</td>
+  </tr>
+  <tr>
+	<td>Y</td>
+	<td>/j/, /i/</td>
+	<td>wie ‘j’ in ‘ja’ oder ‘i’ in ‘Sinologie’</td>
+  </tr>
+</table> 
+
+
+<p>
+Jedes Wort (inklusive zusammengesetzter Wörter) wird immer auf der letzten Silbe betont.<br />
+</p>
+
+<ul>
+<li><b>bamu</b> (Hallo) - baMU (/ba'mu/)</li>
+<li><b>dasopya</b> (Welt-sprechen) - dasoPYA (/daso'pja/)</li>
+</ul>
+
+<br />
+<h3>
+Wörter
+</h3>
+
+<p>
+Wörter können als jede Wortart verwendet werden.<br />
+</p>
+
+<ul>
+<li><b>syo</b> - Leben, lebendig, leben</li>
+</ul>
+
+<p>
+Wenn der Kontext es nicht klar macht, können Suffixe verwendet werden.<br />
+</p>
+
+<ul>
+<li><b>syogen</b> - Leben (Leben-Konzept)</li>
+<li><b>syobey</b> - lebendig (Leben-zugehörig)</li>
+<li><b>syosyu</b> - leben (Leben-tun)</li>
+</ul>
+
+<p>
+Es gibt keine Artikel, und Wörter können Singular oder Plural sein.<br />
+</p>
+
+<ul>
+<li><b>koko</b> - die Felsen, Felsen, der Felsen, ein Felsen</li>
+<li><b>moy koko</b> - viele Felsen</li>
+<li><b>man koko</b> - ein Felsen (genau einer!)</li>
+</ul>
+
+<p>
+Zusammengesetzte Wörter werden frei geformt, indem die beschreibenden Wörter zuerst, und das beschriebene Wort am Ende kommt.<br />
+</p>
+
+<ul>
+<li><b>tukatina</b> (Fuß-Finger) - Zeh</li>
+<li><b>kwepagi</b> (Gegenteil-offen) - geschlossen</li>
+<li><b>musumodyokebo</b> (Schlaf-Möbel-Bedeckung) - Bettlaken</li>
+</ul>
+
+<br />
+<h3>
+Sätze
+</h3>
+
+<p>
+In Sätzen geht ‘<b>a</b>’ Subjekten, ‘<b>i</b>’ Verben und ‘<b>e</b>’ Objekten voraus. Der Kontext kommt immer am Anfang.<br />
+</p>
+
+<ul>
+<li><b>pindin, a dey i mabo e kagay</b> (,,dieser-Platz, [a] Tier [i] Essen [e] Gras") - Hier isst das Tier Gras.</li>
+</ul>
+
+<p>
+Adjektive kommen vor Substantive und Adverbien vor Verben. Ansonsten sind sie identisch.<br />
+</p>
+
+<ul>
+<li><b>lase sapa i lase suki</b>(,,schnell Fisch [i] schnell schwimmen") - Schnelle Fische schwimmen schnell.</li>
+</ul>
+
+<p>
+Präpositionen kommen vor Substantive.<br />
+</p>
+
+<ul>
+<li><b>daw i sami law gemo</b>(,,Person [i] gehen in Garten") - Die Person geht in den Garten.</li>
+</ul>
+
+<br />
+<h3>
+Grammatik
+</h3>
+
+<p>
+<b>mye</b> bildet die Vergangenheit, <b>dyu</b> die Zukunft.<br />
+</p>
+
+<ul>
+<li><b>kyu i mye legi; bay i dyu legi</b> (,,Du [i] schon arbeiten; ich [i] werden arbeiten") - Du hast gearbeitet; Ich werde arbeiten.</li>
+</ul>
+
+<p>
+Hilfsverben folgen einander direkt.<br />
+</p>
+
+<ul>
+<li><b>swe i subi sedi plu</b> (,,Sie [i] sollen versuchen gehen") - Sie sollten versuchen zu gehen.</li>
+</ul>
+
+<p>
+<b>hoy</b> markiert Possession, kann aber auch Adjektive neu anordnen.<br />
+</p>
+
+<ul>
+<li><b>kopo hoy bay</b> (,,Buch des ich") - mein Buch</li>
+<li><b>kopo hoy lake</b> (,,Buch des rot") - rotes Buch</li>
+</ul>
+
+<p>
+Um eine Frage zu formen, beginnt man den Satz mit <b>kay</b> und ersetzt das Unbekannte durch <b>kya</b>.<br />
+</p>
+
+<ul>
+<li><b>kay a kotu i swa e kya?</b> ("Frage [a] Stunde [i] ist [e] was") - Wie spät ist es?</li>
+</ul>
+
+<p>
+<b>teso</b> kann einen Nebensatz bilden, wie mit ,,das" oder ,,der."<br />
+</p>
+
+<ul>
+<li><b>swe i dani e gwa teso i swa e gwi</b> ("Sie [i] mögen [e] Haus das [i] ist [e] gut") - Sie mögen Häuser, die gut sind.</li>
+</ul>
+
+<p>
+Dasopya ist eine Pro-Drop-Sprache, es ist also erlaubt, jedes Wort, das vom Kontext her klar ist, wegzulassen.<br />
+</p>
+
+<ul>
+<li><b>hapa e bote</b> ("Blume [e] blau") - Die Blume (ist) blau.</li>
+<li><b>i mapi</b> ("[i] verstehen") - (Ich) verstehe.</li>
+<li><b>e masu</b> ("[e] Morgen") - (Es ist) Morgen.</li>
+</ul>
+
+<p>
+‘<b>u</b>’ markiert indirekte Objekte.<br />
+</p>
+
+<ul>
+<li><b>i day e san u swe</b> ("[i] geben [e] dies [u] ihnen") - Gib ihnen das.</li>
+</ul>
+
+<p>
+‘<b>o</b>’ markiert jedes Wort, welches nicht zum Grundvokabular gehört.<br />
+</p>
+
+<ul>
+<li><b>oKanada</b> - Kanada</li>
+<li><b>oPisa</b> - Pizza</li>
+</ul>
+
+<br />
+<h3>
+Grundlegende Wörter
+</h3>
+
+<table class="striped" style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:30%">Dasopya</th>
+    <th style="width:80%">Deutsch</th>
+  </tr>
+  <tr>
+    <td>pin</td>
+    <td>dies</td>
+  </tr>
+  <tr>
+    <td>san</td>
+    <td>das</td>
+  </tr>
+  <tr>
+    <td>bay</td>
+    <td>Ich, mich</td>
+  </tr>
+  <tr>
+    <td>kyu</td>
+    <td>Du, ihr</td>
+  </tr>
+  <tr>
+    <td>swe</td>
+    <td>Sie</td>
+  </tr>
+  <tr>
+    <td>daw</td>
+    <td>Person, Individuum, Einer (Pronomen)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lay</td>
+    <td>ja</td>
+  </tr>
+  <tr>
+    <td>kwe</td>
+    <td>(Umkehrungspräfix), nein, Gegenteil</td>
+  </tr>
+  <tr>
+    <td>kate</td>
+    <td>korrekt, richtig</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bamu</td>
+    <td>Hallo, Begrüßung, Tschüss</td>
+  </tr>
+  <tr>
+    <td>gwi</td>
+    <td>gut</td>
+  </tr>
+  <tr>
+    <td>dye</td>
+    <td>schlecht</td>
+  </tr>
+  <tr>
+    <td>gadu</td>
+    <td>Danke, Dankbarkeit</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>swa</td>
+    <td>ist, bin, sein</td>
+  </tr>
+  <tr>
+    <td>syu</td>
+    <td>tun, machen</td>
+  </tr>
+  <tr>
+    <td>day</td>
+    <td>(ab-)geben, Preis, ausstrahlen</td>
+  </tr>
+  <tr>
+    <td>pya</td>
+    <td>sprechen, reden, Rede, Sprache, Tiergeräusch</td>
+  </tr>
+  <tr>
+    <td>plu</td>
+    <td>(sich) bewegen, gehen</td>
+  </tr>
+ <tr>
+    <td>boti</td>
+    <td>wollen, Wunsch, Intention, Wille</td>
+  </tr>
+  <tr>
+    <td>tey</td>
+    <td>können die Möglichkeit haben,dürfen, -bar (z.B. machbar)</td>
+  </tr>
+  <tr>
+    <td>subi</td>
+    <td>müssen, sollen, Pflicht</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>polu</td>
+    <td>alles, all, jeder, jeglicher</td>
+  </tr>
+  <tr>
+    <td>tay</td>
+    <td>viele, sehr, wirklich, eine Menge</td>
+  </tr>
+  <tr>
+    <td>pene</td>
+    <td>einiges, etwas, eher, ziemlich</td>
+  </tr>
+  <tr>
+    <td>moy</td>
+    <td>mehrere</td>
+  </tr>
+  <tr>
+    <td>baw</td>
+    <td>mehr</td>
+  </tr>
+  <tr>
+    <td>buki</td>
+    <td>vergleichen, wie, als, verhältnismäßig</td>
+  </tr>
+  <tr>
+    <td>byu</td>
+    <td>am meisten (Superlativ)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>sya</td>
+    <td>und, plus, hinzufügen, auch, zusätzlich</td>
+  </tr>
+  <tr>
+    <td>lodu</td>
+    <td>oder, entweder</td>
+  </tr>
+  <tr>
+    <td>bemyu</td>
+    <td>aber, trotzdem</td>
+  </tr>
+  <tr>
+    <td>begu</td>
+    <td>wenn, theoretisch, Szenario</td>
+  </tr>
+  <tr>
+    <td>taku</td>
+    <td>Grund, weil, Herkunft, von (wegen)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>kay</td>
+    <td>Frage (Frage-Markierung)</td>
+  </tr>
+  <tr>
+    <td>kya</td>
+    <td>welches, welcher</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mye</td>
+    <td>schon, vor, (Vergangenheitsmarkierung)</td>
+  </tr>
+  <tr>
+    <td>dyu</td>
+    <td>werden, nach, (Futur-Markierung)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>boy</td>
+    <td>für, bei, von, in, auf, (Präpositionsmarkierung)</td>
+  </tr>
+  <tr>
+    <td>telu</td>
+    <td>zu, nach (Ziel), um zu...</td>
+  </tr>
+  <tr>
+    <td>doke</td>
+    <td>von, weg (von), aus heraus</td>
+  </tr>
+  <tr>
+    <td>say</td>
+    <td>Richtung, zu, führen, Orientierung</td>
+  </tr>
+  <tr>
+    <td>pay</td>
+    <td>über, hoch,auf, oben, (etwas) hochheben, (auf-)steigen</td>
+  </tr>
+  <tr>
+    <td>gyu</td>
+    <td>vorne, vor</td>
+  </tr>
+  <tr>
+    <td>law</td>
+    <td>in, innerhalb</td>
+  </tr>
+  <tr>
+    <td>sye</td>
+    <td>Seite, angrenzend</td>
+  </tr>
+  <tr>
+    <td>byo</td>
+    <td>durch, quer, trans-</td>
+  </tr>
+  <tr>
+    <td>koy</td>
+    <td>weit, tele-</td>
+  </tr>
+  <tr>
+    <td>mite</td>
+    <td>zwischen, inter-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>soy</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>man</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>swi</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>tya</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>pelo</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>kula</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>deli</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>bete</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>hopya</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>miko</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>ley</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>sehu</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>siku</td>
+    <td>1000</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bya</td>
+    <td>männlich, Mann, Junge</td>
+  </tr>
+  <tr>
+    <td>maw</td>
+    <td>weiblich, Frau, Mädchen</td>
+  </tr>
+  <tr>
+    <td>domay</td>
+    <td>Freund</td>
+  </tr>
+  <tr>
+    <td>milu</td>
+    <td>Liebe</td>
+  </tr>
+  <tr>
+    <td>pana</td>
+    <td>Hand, händeln, halten</td>
+  </tr>
+  <tr>
+    <td>loy</td>
+    <td>Auge, sehen, beobachten, gucken</td>
+  </tr>
+  <tr>
+    <td>deka</td>
+    <td>Ohr, (zu-)hören</td>
+  </tr>
+  <tr>
+    <td>paka</td>
+    <td>Kopf, Anführer</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>dey</td>
+    <td>Tier, Kreatur</td>
+  </tr>
+  <tr>
+    <td>matya</td>
+    <td>Katze, katzenartig</td>
+  </tr>
+  <tr>
+    <td>hugwa</td>
+    <td>Hund, hundeartig</td>
+  </tr>
+  <tr>
+    <td>pila</td>
+    <td>Vogel</td>
+  </tr>
+  <tr>
+    <td>sapa</td>
+    <td>Fisch</td>
+  </tr>
+  <tr>
+    <td>pasa</td>
+    <td>Pflanze, pflanzen</td>
+  </tr>
+  <tr>
+    <td>kikaw</td>
+    <td>Baum</td>
+  </tr>
+  <tr>
+    <td>hapa</td>
+    <td>Blume</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>gwa</td>
+    <td>Gebäude, Haus, bauen, konstruieren</td>
+  </tr>
+  <tr>
+    <td>gan</td>
+    <td>Raum</td>
+  </tr>
+  <tr>
+    <td>kiso</td>
+    <td>Stuhl, sitzen</td>
+  </tr>
+  <tr>
+    <td>lado</td>
+    <td>(Schreib-)Tisch</td>
+  </tr>
+  <tr>
+    <td>pyo</td>
+    <td>benutzen</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>doy</td>
+    <td>groß</td>
+  </tr>
+  <tr>
+    <td>kumye</td>
+    <td>lang, Länge</td>
+  </tr>
+  <tr>
+    <td>sike</td>
+    <td>Farbe, Farbton</td>
+  </tr>
+  <tr>
+    <td>lake</td>
+    <td>rot</td>
+  </tr>
+  <tr>
+    <td>lamye</td>
+    <td>gelb</td>
+  </tr>
+  <tr>
+    <td>bote</td>
+    <td>blau</td>
+  </tr>
+  <tr>
+    <td>kahe</td>
+    <td>schwarz</td>
+  </tr>
+  <tr>
+    <td>buse</td>
+    <td>weiß</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lon</td>
+    <td>Zeit, wann</td>
+  </tr>
+  <tr>
+    <td>tonu</td>
+    <td>Jahr</td>
+  </tr>
+  <tr>
+    <td>loso</td>
+    <td>Mond, Monat</td>
+  </tr>
+  <tr>
+    <td>han</td>
+    <td>Tag, Datum</td>
+  </tr>
+  <tr>
+    <td>kotu</td>
+    <td>Stunde</td>
+  </tr>
+  <tr>
+    <td>mebyu</td>
+    <td>Minute</td>
+  </tr>
+  <tr>
+    <td>busu</td>
+    <td>Sekunde</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mabo</td>
+    <td>Essen, Mahlzeit, essen, konsumieren</td>
+  </tr>
+  <tr>
+    <td>bugo</td>
+    <td>Getränk, trinken</td>
+  </tr>
+  <tr>
+    <td>kupa</td>
+    <td>Frucht</td>
+  </tr>
+  <tr>
+    <td>hidwa</td>
+    <td>Gemüse</td>
+  </tr>
+  <tr>
+    <td>lano</td>
+    <td>Brot, Laib, Brötchen</td>
+  </tr>
+  <tr>
+    <td>simo</td>
+    <td>Reis</td>
+  </tr>
+  <tr>
+    <td>toki</td>
+    <td>kochen</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td></td>
+  </tr>
+</table> 
+
+<br /><br />
+<p style="color:grey;">
+Übersetzt von Habanero030 und Korrektur gelesen von eyelessius. Seitenformat basierend auf elefen.org
+</p>
+
+</div> <!-- end German section -->
+</div> <!-- section won't function without this for some reason, so here -->
+</div>
+
+<div id="espanol">
+
+<br />
+<h1>Introducción en Español</h1>
+<hr> 
+<a href="dasopya.html">&lt; Regresar a Contenido</a> <br />
+
+<br />
+
+ <table>
+  <tr>
+    <th>Español</th>
+    <th>Dasopya</th>
+  </tr>
+  <tr>
+    <td>El dasopya es una lengua simple y fácil de aprender para cualquier persona alrededor del mundo.</td>
+    <td>dasopya i swa e pya teso i mye dwetona telu i swa e kwetose e kwepide telu dubi hoy poludaw hoy labe daso.</td>
+  </tr>
+  <tr>
+    <td>La gramática tiene pocas reglas, y ninguna excepción.</td>
+    <td>goy pyasahu i hay e kwetay sahu, sya e soy sibyegoy.</td>
+  </tr>
+  <tr>
+    <td>La ortografía es consistente y cada letra siempre tiene el mismo sonido.</td>
+    <td>libudoli i swa e soytawbey, sya a polu libu i polulon tona e kwetaw toso.</td>
+  </tr>
+  <tr>
+    <td>Únicamente tiene alrededor de 800 palabras base, las cuales se pueden combinar con libertad y facilidad.</td>
+    <td>goy i dole hay e kwetitu 800 gulo samu, teso i tey samuhapu hoy kwesepobey sya kwepidebey.</td>
+  </tr>
+  <tr>
+    <td>Cada palabra fue hecha desde cero, para que no haya sesgo hacia ningún país.</td>
+    <td>polu samu i mye dwetona doke soyhupyo; boysesey, i swa e soy petu hoy mey matu.</td>
+  </tr>
+</table> 
+
+<br />
+<h2>Basicos</h2>
+<hr> 
+
+<h3>
+Abecedario y Pronunciación
+</h3>
+
+<p>
+Cada letra siempre tiene la misma pronunciación. Algunas letras tienen pronunciaciones múltiples dependiendo de quien hable pero la primera de la lista es preferible. Las mayúsculas no son requeridas en el Dasopya.<br />
+</p>
+
+<table style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:10%">Letra</th>
+    <th style="width:20%">AFI</th>
+	<th>Ejemplo</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>/a/</td>
+	<td>como "a" en "ahora"</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>/b/, /v/</td>
+	<td>como "b" en "bueno"</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>/d/, /ð̞/</td>
+	<td>como "d" en "dedo"</td>
+  </tr>
+  <tr>
+	<td>E</td>
+	<td>/e/</td>
+	<td>como "e" en "edad"</td>
+  </tr>
+  <tr>
+	<td>G</td>
+	<td>/g/</td>
+	<td>como "g" en "gato"</td>
+  </tr>
+  <tr>
+	<td>H</td>
+	<td>/h/, /x/, /ɾ/</td>
+	<td>como "j" en "jugo"</td>
+  </tr>
+  <tr>
+	<td>I</td>
+	<td>/i/</td>
+	<td>como "i" en "ira"</td>
+  </tr>
+  <tr>
+	<td>K</td>
+	<td>/kʰ/, /k/</td>
+	<td>como "k" en "kilogramo" o “c” en “casa”</td>
+  </tr>
+  <tr>
+	<td>L</td>
+	<td>/l/, /ɾ/</td>
+	<td>como "l" en "libro"</td>
+  </tr>
+  <tr>
+	<td>M</td>
+	<td>/m/</td>
+	<td>como "m" en "mano"</td>
+  </tr>
+  <tr>
+	<td>N</td>
+	<td>/n/</td>
+	<td>como "n" en "nueve"</td>
+  </tr>
+  <tr>
+	<td>O</td>
+	<td>/o/</td>
+	<td>como "o" en "ojo"</td>
+  </tr>
+  <tr>
+	<td>P</td>
+	<td>/pʰ/, /p/, /f/</td>
+	<td>como "p" en "poder"</td>
+  </tr>
+  <tr>
+	<td>S</td>
+	<td>/s/, /θ/, /ʃ/, /z/</td>
+	<td>como "s" en "solo"</td>
+  </tr>
+  <tr>
+	<td>T</td>
+	<td>/tʰ/, /t/</td>
+	<td>como "t" en "tú"</td>
+  </tr>
+  <tr>
+	<td>U</td>
+	<td>/u/</td>
+	<td>como "u" en "uno"</td>
+  </tr>
+  <tr>
+	<td>W</td>
+	<td>/w/, /u/, /v/</td>
+	<td>como "w" en "wiki" o "u" en "uno"</td>
+  </tr>
+  <tr>
+	<td>Y</td>
+	<td>/j/, /i/</td>
+	<td>como "y" en "yerno" o "i" en "si"</td>
+  </tr>
+</table> 
+
+
+<p>
+Cada palabra (incluyendo palabras compuestas) tiene énfasis en la última sílaba.<br />
+</p>
+
+<ul>
+<li><b>bamu</b> (hola) - baMU (/ba'mu/)</li>
+<li><b>dasopya</b> (mundo-hablar) - dasoPYA (/daso'pja/)</li>
+</ul>
+
+<br />
+<h3>
+Palabras
+</h3>
+
+<p>
+Las palabras pueden usarse como cualquier parte de una oración.<br />
+</p>
+
+<ul>
+<li><b>syo</b> - vida, vivo, vivir</li>
+</ul>
+
+<p>
+Si el contexto no es suficientemente claro, se pueden agregar sufijos.<br />
+</p>
+
+<ul>
+<li><b>syogen</b> - vida (vida-concepto)</li>
+<li><b>syobey</b> - vivo (vida-relacionado)</li>
+<li><b>syosyu</b> - vivir (vida-hacer)</li>
+</ul>
+
+<p>
+No existen los artículos y las palabras pueden ser singulares o plurales por defecto.<br />
+</p>
+
+<ul>
+<li><b>koko</b> - roca, rocas, la roca, una roca</li>
+<li><b>moy koko</b> - múltiples rocas</li>
+<li><b>man koko</b> - una roca</li>
+</ul>
+
+<p>
+Las palabras compuestas se crean de forma libre utilizando un descriptor primero, seguido por la palabra base al final.<br />
+</p>
+
+<ul>
+<li><b>tukatina</b> (pie-dedo) - dedo de los pies</li>
+<li><b>kwepagi</b> (opuesto-abierto) - cerrado</li>
+<li><b>musumodyokebo</b> (dormir-mueble-cubre) - cubrecama</li>
+</ul>
+
+<br />
+<h3>
+Oraciones
+</h3>
+
+<p>
+En las oraciones, "<b>a</b>" precede los sujetos, "<b>i</b>" precede los verbos, y "<b>e</b>" precede los objetos. El contexto siempre se encuentra en el comienzo.<br />
+</p>
+
+<ul>
+<li><b>pindin, a dey i mabo e kagay</b> ("este-lugar, [a] animal [i] comida [e] hierba") - Aquí, el animal come hierba </li>
+</ul>
+
+<p>
+Los adjetivos se colocan antes de los sustantivos y los adverbios antes de los verbos. Aparte de esto, son idénticos.<br />
+</p>
+
+<ul>
+<li><b>lase sapa i lase suki</b> ("rápido pez [i] rápido nadar ") - Peces rápidoss nadan rápidamente </li>
+</ul>
+
+<p>
+Las preposiciones se colocan antes de los sustantivos. <br />
+</p>
+
+<ul>
+<li><b>daw i sami law gemo</b> ("persona [i] camina en jardín") - La persona camina en el jardín </li>
+</ul>
+
+<br />
+<h3>
+Gramática
+</h3>
+
+<p>
+<b>mye</b> se usa para el pretérito y <b>dyu</b> para el futuro simple.<br />
+</p>
+
+<ul>
+<li><b>kyu i mye legi; bay i dyu legi</b> ("tu [i] ya trabajar; Yo [i] (ir a) trabajar") - Tú trabajaste;  voy a trabajar </li>
+</ul>
+
+<p>
+Los verbos auxiliares se siguen entre sí.<br />
+</p>
+
+<ul>
+<li><b>swe i subi sedi plu</b> ("ellos [i] deber tratar ir") - Ellos deberían tratar de ir </li>
+</ul>
+
+<p>
+<b>hoy</b> define posesión pero también se puede usar para reordenar los adjetivos.<br />
+</p>
+
+<ul>
+<li><b>kopo hoy bay</b> ("libro de yo") - mi libro </li>
+<li><b>kopo hoy lake</b> ("libro de rojo") - libro rojo </li>
+</ul>
+
+<p>
+Para formar una pregunta, comienza la oración con <b>kay</b> y adjunta <b>kya</b> al desconocido.<br />
+</p>
+
+<ul>
+<li><b>kay a kotu i swa e kya?</b> ("pregunta [a] hora [i] ser [e] que") - ¿Qué hora es?</li>
+</ul>
+
+<p>
+<b>teso</b> puede crear una cláusula con dependencia, como "eso" o "quien".<br />
+</p>
+
+<ul>
+<li><b>swe i dani e gwa teso i swa e gwi</b> ("ellos [i] gustar [e] casa que [i] ser [e] bueno") - A ellos les gustan las casas que son buenas</li>
+</ul>
+
+<p>
+En Dasopya se puede omitir cualquier palabra que sea obvia en el contexto.<br />
+</p>
+
+<ul>
+<li><b>hapa e bote</b> ("flor [e] azul") - La flor (es) azul</li>
+<li><b>i mapi</b> ("[i] entender") - (Yo) entiendo</li>
+<li><b>e masu</b> ("[e] mañana") - (Es la) mañana</li>
+</ul>
+
+<p>
+"<b>u</b>" se usa para objetos indirectos.<br />
+</p>
+
+<ul>
+<li><b>i day e san u swe</b> ("[i] dar [e] eso [u] ellos") - Dale eso a ellos.</li>
+</ul>
+
+<p>
+"<b>o</b>" se usa para cualquier palabra fuera del vocabulario base.<br />
+</p>
+
+<ul>
+<li><b>oKanada</b> - Canadá</li>
+<li><b>oPisa</b> - Pizza</li>
+</ul>
+
+<br />
+<h3>
+Palabras Basico
+</h3>
+
+<table class="striped" style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:30%">Dasopya</th>
+    <th style="width:80%">Español</th>
+  </tr>
+  <tr>
+    <td>pin</td>
+    <td>este</td>
+  </tr>
+  <tr>
+    <td>san</td>
+    <td>ese</td>
+  </tr>
+  <tr>
+    <td>bay</td>
+    <td>mi, yo</td>
+  </tr>
+  <tr>
+    <td>kyu</td>
+    <td>tú, usted, vosotros, ustedes</td>
+  </tr>
+  <tr>
+    <td>swe</td>
+    <td>él, ella, ellos, ellas</td>
+  </tr>
+  <tr>
+    <td>daw</td>
+    <td>persona, individuo, uno (pronombre)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lay</td>
+    <td>sí</td>
+  </tr>
+  <tr>
+    <td>kwe</td>
+    <td>(prefijo inversión), no, opuesto</td>
+  </tr>
+  <tr>
+    <td>kate</td>
+    <td>correcto, accurate, acertado</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bamu</td>
+    <td>hola, saludos, adiós</td>
+  </tr>
+  <tr>
+    <td>gwi</td>
+    <td>bueno, bien</td>
+  </tr>
+  <tr>
+    <td>dye</td>
+    <td>malo</td>
+  </tr>
+  <tr>
+    <td>gadu</td>
+    <td>gracias, gratitud</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>swa</td>
+    <td>ser, estoy</td>
+  </tr>
+  <tr>
+    <td>syu</td>
+    <td>hacer</td>
+  </tr>
+  <tr>
+    <td>day</td>
+    <td>dar, subvención, adjudicar, emitir</td>
+  </tr>
+  <tr>
+    <td>pya</td>
+    <td>hablar, discurso, lenguaje, sonido animal</td>
+  </tr>
+  <tr>
+    <td>plu</td>
+    <td>mover, ir</td>
+  </tr>
+ <tr>
+    <td>boti</td>
+    <td>querer, desear, intención, voluntad</td>
+  </tr>
+  <tr>
+    <td>tey</td>
+    <td>puede, -able</td>
+  </tr>
+  <tr>
+    <td>subi</td>
+    <td>deber, obligación</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>polu</td>
+    <td>todo, cualquiera</td>
+  </tr>
+  <tr>
+    <td>tay</td>
+    <td>mucho, muy</td>
+  </tr>
+  <tr>
+    <td>pene</td>
+    <td>algún, un poco, un tanto</td>
+  </tr>
+  <tr>
+    <td>moy</td>
+    <td>múltiple</td>
+  </tr>
+  <tr>
+    <td>baw</td>
+    <td>más</td>
+  </tr>
+  <tr>
+    <td>buki</td>
+    <td>comparar, como, más, relativamente</td>
+  </tr>
+  <tr>
+    <td>byu</td>
+    <td>mayor, la más (superlativo)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>sya</td>
+    <td>y, más, agregar, también, adicionalmente</td>
+  </tr>
+  <tr>
+    <td>lodu</td>
+    <td>o, cualquiera de los dos</td>
+  </tr>
+  <tr>
+    <td>bemyu</td>
+    <td>pero, sin embargo</td>
+  </tr>
+  <tr>
+    <td>begu</td>
+    <td>si, hipotéticamente, escenario</td>
+  </tr>
+  <tr>
+    <td>taku</td>
+    <td>causa, porque, origen, de (debido a)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>kay</td>
+    <td>pregunta, (signo de interrogación)</td>
+  </tr>
+  <tr>
+    <td>kya</td>
+    <td>qué, cuál</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mye</td>
+    <td>ya, antes, (marca pretérito)</td>
+  </tr>
+  <tr>
+    <td>dyu</td>
+    <td>voy a, después, (marca futuro simple)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>boy</td>
+    <td>por, a, de, en, (marca preposición)</td>
+  </tr>
+  <tr>
+    <td>telu</td>
+    <td>al, por (destino, gol), (en orden) para</td>
+  </tr>
+  <tr>
+    <td>doke</td>
+    <td>de (lugar, ubicación), del</td>
+  </tr>
+  <tr>
+    <td>say</td>
+    <td>dirección, hacia, a, orientación</td>
+  </tr>
+  <tr>
+    <td>pay</td>
+    <td>arriva, leventar</td>
+  </tr>
+  <tr>
+    <td>gyu</td>
+    <td>frente, al frente</td>
+  </tr>
+  <tr>
+    <td>law</td>
+    <td>dentro, adentro</td>
+  </tr>
+  <tr>
+    <td>sye</td>
+    <td>lado, adyacente</td>
+  </tr>
+  <tr>
+    <td>byo</td>
+    <td>por, trans-</td>
+  </tr>
+  <tr>
+    <td>koy</td>
+    <td>lejos, a través de, tele-</td>
+  </tr>
+  <tr>
+    <td>mite</td>
+    <td>entre, inter-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>soy</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>man</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>swi</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>tya</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>pelo</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>kula</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>deli</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>bete</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>hopya</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>miko</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>ley</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>sehu</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>siku</td>
+    <td>1000</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bya</td>
+    <td>masculino, hombre, niño</td>
+  </tr>
+  <tr>
+    <td>maw</td>
+    <td>femenino, mujer, niña</td>
+  </tr>
+  <tr>
+    <td>domay</td>
+    <td>amigo, amiga</td>
+  </tr>
+  <tr>
+    <td>milu</td>
+    <td>amor</td>
+  </tr>
+  <tr>
+    <td>pana</td>
+    <td>mano, manejar, sostener</td>
+  </tr>
+  <tr>
+    <td>loy</td>
+    <td>ojo, a ver, mirar</td>
+  </tr>
+  <tr>
+    <td>deka</td>
+    <td>oreja, escuchar</td>
+  </tr>
+  <tr>
+    <td>paka</td>
+    <td>cabeza, jefe / jefa</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>dey</td>
+    <td>animal, creatura</td>
+  </tr>
+  <tr>
+    <td>matya</td>
+    <td>gato, felino</td>
+  </tr>
+  <tr>
+    <td>hugwa</td>
+    <td>perro, canino</td>
+  </tr>
+  <tr>
+    <td>pila</td>
+    <td>pajáro</td>
+  </tr>
+  <tr>
+    <td>sapa</td>
+    <td>pescado</td>
+  </tr>
+  <tr>
+    <td>pasa</td>
+    <td>planta, plantar</td>
+  </tr>
+  <tr>
+    <td>kikaw</td>
+    <td>arbo</td>
+  </tr>
+  <tr>
+    <td>hapa</td>
+    <td>flor</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>gwa</td>
+    <td>edificio, casa, construir</td>
+  </tr>
+  <tr>
+    <td>gan</td>
+    <td>cuarto</td>
+  </tr>
+  <tr>
+    <td>kiso</td>
+    <td>silla, sentar</td>
+  </tr>
+  <tr>
+    <td>lado</td>
+    <td>mesa, escritorio</td>
+  </tr>
+  <tr>
+    <td>pyo</td>
+    <td>usar</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>doy</td>
+    <td>grande</td>
+  </tr>
+  <tr>
+    <td>kumye</td>
+    <td>largo, longitud</td>
+  </tr>
+  <tr>
+    <td>sike</td>
+    <td>color, matiz</td>
+  </tr>
+  <tr>
+    <td>lake</td>
+    <td>rojo</td>
+  </tr>
+  <tr>
+    <td>lamye</td>
+    <td>amarillo</td>
+  </tr>
+  <tr>
+    <td>bote</td>
+    <td>azul</td>
+  </tr>
+  <tr>
+    <td>kahe</td>
+    <td>negro</td>
+  </tr>
+  <tr>
+    <td>buse</td>
+    <td>blanco</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lon</td>
+    <td>tiempo, cuando</td>
+  </tr>
+  <tr>
+    <td>tonu</td>
+    <td>aňo</td>
+  </tr>
+  <tr>
+    <td>loso</td>
+    <td>luna, mes</td>
+  </tr>
+  <tr>
+    <td>han</td>
+    <td>dia, fecha</td>
+  </tr>
+  <tr>
+    <td>kotu</td>
+    <td>hora</td>
+  </tr>
+  <tr>
+    <td>mebyu</td>
+    <td>minuto</td>
+  </tr>
+  <tr>
+    <td>busu</td>
+    <td>segundo</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mabo</td>
+    <td>comida, comer</td>
+  </tr>
+  <tr>
+    <td>bugo</td>
+    <td>bebida, beber</td>
+  </tr>
+  <tr>
+    <td>kupa</td>
+    <td>fruta</td>
+  </tr>
+  <tr>
+    <td>hidwa</td>
+    <td>vejetales</td>
+  </tr>
+  <tr>
+    <td>lano</td>
+    <td>pan, barra, bollo </td>
+  </tr>
+  <tr>
+    <td>simo</td>
+    <td>arroz</td>
+  </tr>
+  <tr>
+    <td>toki</td>
+    <td>cocinar</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td></td>
+  </tr>
+</table> 
+
+<br /><br />
+<p style="color:grey;">
+Traducido por Snow, revisado por Vecderg, FloofyTreats y Chabi.  Estilo de pagina basado en elefen.org
+</p>
+
+</div> <!-- end Spanish section -->
+
+<div id="francais">
+
+<br />
+<h1>Introduction en Français</h1>
+<hr> 
+<a href="dasopya.html">&lt; Retour au Sommaire</a> <br />
+
+<br />
+
+ <table>
+  <tr>
+    <th>Français</th>
+    <th>Dasopya</th>
+  </tr>
+  <tr>
+    <td>Le dasopya est une langue qui a été créée pour être simple et facile pour que tout le monde autour du monde puisse l’apprendre</td>
+    <td>dasopya i swa e pya teso i mye dwetona telu i swa e kwetose e kwepide telu dubi hoy poludaw hoy labe daso.</td>
+  </tr>
+  <tr>
+    <td>Sa grammaire a très peu de règles et pas d’exceptions.</td>
+    <td>goy pyasahu i hay e kwetay sahu, sya e soy sibyegoy.</td>
+  </tr>
+  <tr>
+    <td>L’orthographe est invariable et chaque lettre produit toujours le même son.</td>
+    <td>libudoli i swa e soytawbey, sya a polu libu i polulon tona e kwetaw toso.</td>
+  </tr>
+  <tr>
+    <td>Il a seulement environ 800 mots de base, qui peuvent être composés librement et facilement.</td>
+    <td>goy i dole hay e kwetitu 800 gulo samu, teso i tey samuhapu hoy kwesepobey sya kwepidebey.</td>
+  </tr>
+  <tr>
+    <td>Chaque mot est fait à partir de zéro, afin qu’il n’y ait pas de biais envers un pays.</td>
+    <td>polu samu i mye dwetona doke soyhupyo; boysesey, i swa e soy petu hoy mey matu.</td>
+  </tr>
+</table> 
+
+<br />
+<h2>Les bases</h2>
+<hr> 
+
+<h3>
+Alphabet et Prononciation
+</h3>
+
+<p>
+Chaque lettre est prononcée de la même manière. Certaines lettres peuvent avoir plusieurs prononciations selon les préférences du locuteur, mais on préfèrera généralement la première listée. L’utilisation des majuscules n’est pas obligatoire en dasopya.<br />
+</p>
+
+<table style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:10%">Lettre</th>
+    <th style="width:20%">API</th>
+	<th>Exemple</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>/a/</td>
+	<td>Comme le "a" dans "can<b>a</b>rd"</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>/b/, /v/</td>
+	<td>Comme le "b" dans "<b>b</b>anc"</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>/d/, /ð̞/</td>
+	<td>Comme le "d" dans "<b>d</b>ent"</td>
+  </tr>
+  <tr>
+	<td>E</td>
+	<td>/e/</td>
+	<td>Comme le "e" dans "d<b>é</b>"</td>
+  </tr>
+  <tr>
+	<td>G</td>
+	<td>/g/</td>
+	<td>Comme le "g" dans "<b>g</b>ant"</td>
+  </tr>
+  <tr>
+	<td>H</td>
+	<td>/h/, /x/, /ɾ/</td>
+	<td>Comme le "h" dans "<b>h</b>op !", alternativement comme le “r” dans “<b>r</b>ouge”</td>
+  </tr>
+  <tr>
+	<td>I</td>
+	<td>/i/</td>
+	<td>Comme le "i" dans "<b>î</b>le"</td>
+  </tr>
+  <tr>
+	<td>K</td>
+	<td>/kʰ/, /k/</td>
+	<td>Comme le "k" dans "<b>k</b>aki"</td>
+  </tr>
+  <tr>
+	<td>L</td>
+	<td>/l/, /ɾ/</td>
+	<td>Comme le "l" dans "<b>l</b>une"</td>
+  </tr>
+  <tr>
+	<td>M</td>
+	<td>/m/</td>
+	<td>Comme le "m" dans "a<b>m</b>our"</td>
+  </tr>
+  <tr>
+	<td>N</td>
+	<td>/n/</td>
+	<td>Comme le "n" dans "<b>n</b>uit"</td>
+  </tr>
+  <tr>
+	<td>O</td>
+	<td>/o/</td>
+	<td>Comme le "o" dans "<b>o</b>ser"</td>
+  </tr>
+  <tr>
+	<td>P</td>
+	<td>/pʰ/, /p/, /f/</td>
+	<td>Comme le "p" dans "sou<b>p</b>e"</td>
+  </tr>
+  <tr>
+	<td>S</td>
+	<td>/s/, /θ/, /ʃ/, /z/</td>
+	<td>Comme le "s" dans "a<b>ss</b>ez"</td>
+  </tr>
+  <tr>
+	<td>T</td>
+	<td>/tʰ/, /t/</td>
+	<td>Comme le "t" dans "<b>t</b>erre"</td>
+  </tr>
+  <tr>
+	<td>U</td>
+	<td>/u/</td>
+	<td>Comme le "ou" dans "p<b>ou</b>"</td>
+  </tr>
+  <tr>
+	<td>W</td>
+	<td>/w/, /u/, /v/</td>
+	<td>Comme le "w" dans "<b>w</b>att" ou le "ou" in "p<b>ou</b>"</td>
+  </tr>
+  <tr>
+	<td>Y</td>
+	<td>/j/, /i/</td>
+	<td>Comme le "ill" dans "f<b>ill</b>e" ou le "i" in "<b>î</b>le"</td>
+  </tr>
+</table> 
+
+
+<p>
+Tout les mots, même composés, sont accentués sur la dernière syllabe.<br />
+</p>
+
+<ul>
+<li><b>bamu</b> (bonjour) - baMU (/ba'mu/)</li>
+<li><b>dasopya</b> (monde-langue) - dasoPYA (/daso'pja/)</li>
+</ul>
+
+<br />
+<h3>
+Mots
+</h3>
+
+<p>
+Les mots de base peuvent toujours être utilisés seuls pour transmettre leur sens.<br />
+</p>
+
+<ul>
+<li><b>syo</b> - la vie, vivant, vivre</li>
+</ul>
+
+<p>
+Si le contexte ne suffit pas, il est possible d’ajouter des suffixes.<br />
+</p>
+
+<ul>
+<li><b>syogen</b> - la vie (vie-concept)</li>
+<li><b>syobey</b> - vivant (vie-être)</li>
+<li><b>syosyu</b> - vivre (vie-faire)</li>
+</ul>
+
+<p>
+Il n’y a pas de déterminants, et les mots peuvent être utilisés au singulier ou au pluriel par défaut.<br />
+</p>
+
+<ul>
+<li><b>koko</b> - caillou, cailloux, le caillou, un caillou</li>
+<li><b>moy koko</b> - plusieurs cailloux</li>
+<li><b>man koko</b> - un (1) caillou</li>
+</ul>
+
+<p>
+Les mots composés sont formés en utilisant les mots les décrivant en premier, et le mot sur lequel il se base à la fin.<br />
+</p>
+
+<ul>
+<li><b>tukatina</b> (pied-doigt) - doigt de pied</li>
+<li><b>kwepagi</b> (non-ouvert) - fermé</li>
+<li><b>musumodyokebo</b> (dormir-mobilier-couvrir) - couverture (de lit)</li>
+</ul>
+
+<br />
+<h3>
+Phrases
+</h3>
+
+<p>
+Dans les phrases, "<b>a</b>" vient avant le sujet, "<b>i</b>" vient avant le verbe, et "<b>e</b>" vient avant le complément. Le contexte vient toujours au début. <br />
+</p>
+
+<ul>
+<li><b>pindin, a dey i mabo e kagay</b> ("Cet-endroit, [a] animal [i] nourriture [e] herbe") - Ici, l’animal mange de l’herbe</li>
+</ul>
+
+<p>
+Les adjectifs se trouvent avant le sujet et les adverbes viennent avant le verbe. Un même mot peut avoir les deux fonctions.<br />
+</p>
+
+<ul>
+<li><b>lase sapa i lase suki</b> ("rapide poisson [i] rapide nage") - Les poissons rapides nagent vite </li>
+</ul>
+
+<p>
+Les prépositions viennent avant leur objet.<br />
+</p>
+
+<ul>
+<li><b>daw i sami law gemo</b> ("quelqu’un [i] marche dans jardin") - Quelqu’un marche dans le jardin </li>
+</ul>
+
+<br />
+<h3>
+Grammaire
+</h3>
+
+<p>
+<b>mye</b> est un marqueur du passé et <b>dyu</b> est un marqueur du futur. Il est possible de les voir comme un auxiliaire pour le passé composé et un auxiliaire pour le futur proche respectivement.<br />
+</p>
+
+<ul>
+<li><b>kyu i mye legi; bay i dyu legi</b> ("Tu [i] [passé] travailler; Je [i] [futur] travailler") - J’ai travaillé;  Je vais travailler.</li>
+</ul>
+
+<p>
+Les auxiliaires se suivent directement et sont placés avant le verbe.<br />
+</p>
+
+<ul>
+<li><b>swe i subi sedi plu</b> ("eux [i] devoir essayer aller") - Ils/Elles devraient essayer d’y aller</li>
+</ul>
+
+<p>
+<b>hoy</b> indique un lien de possession, mais permet aussi d’inverser l’ordre des adjectifs usuels du dasopya. En utilisant hoy on peut donc garder l’ordre français classique.<br />
+</p>
+
+<ul>
+<li><b>kopo hoy bay</b> ("livre de moi") - mon livre </li>
+<li><b>kopo hoy lake</b> ("livre [hoy] rouge") - livre rouge </li>
+</ul>
+
+<p>
+Pour former une question, il suffit de la commencer pa <b>kay</b> et d’ajouter <b>kya</b> comme complément.<br />
+</p>
+
+<ul>
+<li><b>kay a kotu i swa e kya?</b> ("question [a] temps [i] est [e] quoi") - Quelle heure est-il ?</li>
+</ul>
+
+<p>
+<b>teso</b> permet de réemployer le groupe nominal de la même manière que “qui”<br />
+</p>
+
+<ul>
+<li><b>swe i dani e gwa teso i swa e gwi</b> ("ils [i] aiment [e] maison qui [i] est[e] bien") - Ils aiment les maisons qui sont bien</li>
+</ul>
+
+<p>
+En dasopya il est possible aux sujets ou objets évidents à partir du contexte d’être omis par volonté de simplification.<br />
+</p>
+
+<ul>
+<li><b>hapa e bote</b> ("fleur [e] bleue") - La fleur (est) bleue</li>
+<li><b>i mapi</b> ("[i] comprendre") - (Je) comprends</li>
+<li><b>e masu</b> ("[e] matin") - (Il est le) matin</li>
+</ul>
+
+<p>
+"<b>u</b>" indique les compléments d’objet indirect.<br />
+</p>
+
+<ul>
+<li><b>i day e san u swe</b> ("[i] donner [e] ça [u] eux") - Donne-le-leur.</li>
+</ul>
+
+<p>
+"<b>o</b>" indique un mot en dehors du vocabulaire usuel<br />
+</p>
+
+<ul>
+<li><b>oKanada</b> - Canada</li>
+<li><b>oPisa</b> - Pizza</li>
+</ul>
+
+<br />
+<h3>
+Mots simples
+</h3>
+
+<table class="striped" style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:30%">Dasopya</th>
+    <th style="width:80%">Français</th>
+  </tr>
+  <tr>
+    <td>pin</td>
+    <td>ceci / celui-ci</td>
+  </tr>
+  <tr>
+    <td>san</td>
+    <td>cela / celui-là</td>
+  </tr>
+  <tr>
+    <td>bay</td>
+    <td>je, moi</td>
+  </tr>
+  <tr>
+    <td>kyu</td>
+    <td>toi, vous</td>
+  </tr>
+  <tr>
+    <td>swe</td>
+    <td>elle, il, elles, ils, eux</td>
+  </tr>
+  <tr>
+    <td>daw</td>
+    <td>quelqu’un, une personne, on</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lay</td>
+    <td>oui</td>
+  </tr>
+  <tr>
+    <td>kwe</td>
+    <td>anti (préfixe), non, contraire</td>
+  </tr>
+  <tr>
+    <td>kate</td>
+    <td>correct, exact, vrai</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bamu</td>
+    <td>bonjour, salutations, au revoir</td>
+  </tr>
+  <tr>
+    <td>gwi</td>
+    <td>bien, bon</td>
+  </tr>
+  <tr>
+    <td>dye</td>
+    <td>mal, mauvais</td>
+  </tr>
+  <tr>
+    <td>gadu</td>
+    <td>merci, gratitude</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>swa</td>
+    <td>être (je suis, tu es…)</td>
+  </tr>
+  <tr>
+    <td>syu</td>
+    <td>faire (je fais, …)</td>
+  </tr>
+  <tr>
+    <td>day</td>
+    <td>donner, accorder, récompenser, émettre (...)</td>
+  </tr>
+  <tr>
+    <td>pya</td>
+    <td>parler, parole, langage, son d’un animal</td>
+  </tr>
+  <tr>
+    <td>plu</td>
+    <td>aller, se déplacer</td>
+  </tr>
+ <tr>
+    <td>boti</td>
+    <td>vouloir, désirer, intention, volonté</td>
+  </tr>
+  <tr>
+    <td>tey</td>
+    <td>pouvoir, avoir la possibilité de, -able (terminaison), qui peut être</td>
+  </tr>
+  <tr>
+    <td>subi</td>
+    <td>devoir, obligation</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>polu</td>
+    <td>tout, tous, chaque</td>
+  </tr>
+  <tr>
+    <td>tay</td>
+    <td>beaucoup, très, vraiment</td>
+  </tr>
+  <tr>
+    <td>pene</td>
+    <td>un peu, pas mal, plutôt, (une quantité moyenne)</td>
+  </tr>
+  <tr>
+    <td>moy</td>
+    <td>plusieurs</td>
+  </tr>
+  <tr>
+    <td>baw</td>
+    <td>plus, davantage</td>
+  </tr>
+  <tr>
+    <td>buki</td>
+    <td>que, comparer, relativement à</td>
+  </tr>
+  <tr>
+    <td>byu</td>
+    <td>le plus (superlatif)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>sya</td>
+    <td>Et, aussi, (opérateur addition +)</td>
+  </tr>
+  <tr>
+    <td>lodu</td>
+    <td>ou</td>
+  </tr>
+  <tr>
+    <td>bemyu</td>
+    <td>mais, cependant</td>
+  </tr>
+  <tr>
+    <td>begu</td>
+    <td>si, supposition</td>
+  </tr>
+  <tr>
+    <td>taku</td>
+    <td>cause, parce que, origine, à partir de</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>kay</td>
+    <td>question, (marqueur de question)</td>
+  </tr>
+  <tr>
+    <td>kya</td>
+    <td>quoi, quel</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mye</td>
+    <td>avant, déjà, (marqueur du passé)</td>
+  </tr>
+  <tr>
+    <td>dyu</td>
+    <td>après, (marqueur du futur)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>boy</td>
+    <td>marqueur usuel/général des prépositions : à, jusqu’à, vers, depuis, par, en, selon, chez, etc…</td>
+  </tr>
+  <tr>
+    <td>telu</td>
+    <td>marqueur spécifique de préposition : jusqu’à, vers, pour, (la destination/finalité)</td>
+  </tr>
+  <tr>
+    <td>doke</td>
+    <td>marqueur spécifique de préposition : depuis, par, de, (le point de départ/l’origine)</td>
+  </tr>
+  <tr>
+    <td>say</td>
+    <td>marqueur spécifique de préposition : en, selon, dans, (la présence/la manière)</td>
+  </tr>
+  <tr>
+    <td>pay</td>
+    <td>dessus, au-dessus, haut, en haut, monter, s’élever</td>
+  </tr>
+  <tr>
+    <td>gyu</td>
+    <td>devant, en face</td>
+  </tr>
+  <tr>
+    <td>law</td>
+    <td>dedans, à l’intérieur de</td>
+  </tr>
+  <tr>
+    <td>sye</td>
+    <td>côté, adjacent</td>
+  </tr>
+  <tr>
+    <td>byo</td>
+    <td>au travers de, via, trans- (préfixe)</td>
+  </tr>
+  <tr>
+    <td>koy</td>
+    <td>au loin, à distance, tele- (préfixe)</td>
+  </tr>
+  <tr>
+    <td>mite</td>
+    <td>entre, parmi, inter- (préfixe)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>soy</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>man</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>swi</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>tya</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>pelo</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>kula</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>deli</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>bete</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>hopya</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>miko</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>ley</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>sehu</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>siku</td>
+    <td>1000</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bya</td>
+    <td>masculin, homme, garçon</td>
+  </tr>
+  <tr>
+    <td>maw</td>
+    <td>féminin, femme, fille</td>
+  </tr>
+  <tr>
+    <td>domay</td>
+    <td>ami</td>
+  </tr>
+  <tr>
+    <td>milu</td>
+    <td>amour</td>
+  </tr>
+  <tr>
+    <td>pana</td>
+    <td>main, manipuler, tenir</td>
+  </tr>
+  <tr>
+    <td>loy</td>
+    <td>oeil, voir, regarder, observer</td>
+  </tr>
+  <tr>
+    <td>deka</td>
+    <td>oreille, écouter, entendre</td>
+  </tr>
+  <tr>
+    <td>paka</td>
+    <td>tête, leader, dirigeant</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>dey</td>
+    <td>animal, créature</td>
+  </tr>
+  <tr>
+    <td>matya</td>
+    <td>chat, félin</td>
+  </tr>
+  <tr>
+    <td>hugwa</td>
+    <td>chien, canin</td>
+  </tr>
+  <tr>
+    <td>pila</td>
+    <td>oiseau</td>
+  </tr>
+  <tr>
+    <td>sapa</td>
+    <td>poisson</td>
+  </tr>
+  <tr>
+    <td>pasa</td>
+    <td>plante, planter</td>
+  </tr>
+  <tr>
+    <td>kikaw</td>
+    <td>arbre</td>
+  </tr>
+  <tr>
+    <td>hapa</td>
+    <td>fleur</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>gwa</td>
+    <td>bâtiment, construction, maison, construire</td>
+  </tr>
+  <tr>
+    <td>gan</td>
+    <td>salle, pièce</td>
+  </tr>
+  <tr>
+    <td>kiso</td>
+    <td>chaise, s’asseoir</td>
+  </tr>
+  <tr>
+    <td>lado</td>
+    <td>table, bureau</td>
+  </tr>
+  <tr>
+    <td>pyo</td>
+    <td>utiliser</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>doy</td>
+    <td>gros</td>
+  </tr>
+  <tr>
+    <td>kumye</td>
+    <td>long, longueur</td>
+  </tr>
+  <tr>
+    <td>sike</td>
+    <td>couleur, teinte</td>
+  </tr>
+  <tr>
+    <td>lake</td>
+    <td>rouge</td>
+  </tr>
+  <tr>
+    <td>lamye</td>
+    <td>jaune</td>
+  </tr>
+  <tr>
+    <td>bote</td>
+    <td>bleu</td>
+  </tr>
+  <tr>
+    <td>kahe</td>
+    <td>noir</td>
+  </tr>
+  <tr>
+    <td>buse</td>
+    <td>blanc</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lon</td>
+    <td>temps, temporel, quand</td>
+  </tr>
+  <tr>
+    <td>tonu</td>
+    <td>année</td>
+  </tr>
+  <tr>
+    <td>loso</td>
+    <td>mois, lune</td>
+  </tr>
+  <tr>
+    <td>han</td>
+    <td>jour, date</td>
+  </tr>
+  <tr>
+    <td>kotu</td>
+    <td>heure</td>
+  </tr>
+  <tr>
+    <td>mebyu</td>
+    <td>minute</td>
+  </tr>
+  <tr>
+    <td>busu</td>
+    <td>seconde</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mabo</td>
+    <td>nourriture, repas, manger, consommer</td>
+  </tr>
+  <tr>
+    <td>bugo</td>
+    <td>boisson, boire</td>
+  </tr>
+  <tr>
+    <td>kupa</td>
+    <td>fruit</td>
+  </tr>
+  <tr>
+    <td>hidwa</td>
+    <td>légume</td>
+  </tr>
+  <tr>
+    <td>lano</td>
+    <td>pain, miche, brioche</td>
+  </tr>
+  <tr>
+    <td>simo</td>
+    <td>riz</td>
+  </tr>
+  <tr>
+    <td>toki</td>
+    <td>cuisiner</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td></td>
+  </tr>
+</table> 
+
+<br /><br />
+<p style="color:grey;">
+Traduction par Anguigui et relecture par Vecderg. D’après le style de page de elefen.org
+</p>
+
+</div> <!-- end French section -->
+
+<div id="eesti_keel">
+
+<br />
+<h1>Tutvustus eesti keeles</h1>
+<hr> 
+<a href="dasopya.html">&lt; Tagasi avalehele</a> <br />
+
+<br />
+
+ <table>
+  <tr>
+    <th>Eesti keel</th>
+    <th>Dasopya</th>
+  </tr>
+  <tr>
+    <td>Dasopya keel on keel, mis oli tehtud eesmärgiga olla lihtne ja kergesti õpitav kõigi jaoks üle maailma.</td>
+    <td>dasopya i swa e pya teso i mye dwetona telu i swa e kwetose e kwepide telu dubi hoy poludaw hoy labe daso.</td>
+  </tr>
+  <tr>
+    <td>Selle grammatikas on vähe reegleid ning ei ole erandeid.</td>
+    <td>goy pyasahu i hay e kwetay sahu, sya e soy sibyegoy.</td>
+  </tr>
+  <tr>
+    <td>Õigekiri on korrapärane ja iga tähte loetakse alati ühtepidi.</td>
+    <td>libudoli i swa e soytawbey, sya a polu libu i polulon tona e kwetaw toso.</td>
+  </tr>
+  <tr>
+    <td>Selles on vaid umbes 800 tüvisõna, mida saab vabalt ja lihtsalt omavahel liita.</td>
+    <td>goy i dole hay e kwetitu 800 gulo samu, teso i tey samuhapu hoy kwesepobey sya kwepidebey.</td>
+  </tr>
+  <tr>
+    <td>Iga sõna oli välja mõeldud nullist, et keel ei oleks ühtegi riigi poole kallutatud.</td>
+    <td>polu samu i mye dwetona doke soyhupyo; boysesey, i swa e soy petu hoy mey matu.</td>
+  </tr>
+</table> 
+
+<br />
+<h2>Põhireeglid</h2>
+<hr> 
+
+<h3>
+Tähestik ja Hääldus
+</h3>
+
+<p>
+Iga tähte hääldatakse alati samamoodi. Mõnedel tähtedel on mitu hääldust olenevalt kõneleja eelistusest, kuid soovituslik on loetelus esimene. Dasopya keeles ei ole suured tähed vajalikud.<br />
+</p>
+
+<table style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:10%">Täht</th>
+    <th style="width:20%">IPA</th>
+	<th>Näide</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>/a/</td>
+	<td>nagu "a" sõnas "aken"</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>/b/, /v/</td>
+	<td>nagu "b" sõnas "raba"</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>/d/, /ð̞/</td>
+	<td>nagu "d" sõnas "sada"</td>
+  </tr>
+  <tr>
+	<td>E</td>
+	<td>/e/</td>
+	<td>nagu "e" sõnas "ehk"</td>
+  </tr>
+  <tr>
+	<td>G</td>
+	<td>/g/</td>
+	<td>nagu "g" sõnas "aga"</td>
+  </tr>
+  <tr>
+	<td>H</td>
+	<td>/h/, /x/, /ɾ/</td>
+	<td>nagu "h" sõnas "heli"</td>
+  </tr>
+  <tr>
+	<td>I</td>
+	<td>/i/</td>
+	<td>nagu "i" sõnas "inimene"</td>
+  </tr>
+  <tr>
+	<td>K</td>
+	<td>/kʰ/, /k/</td>
+	<td>nagu "k" sõnas "katus"</td>
+  </tr>
+  <tr>
+	<td>L</td>
+	<td>/l/, /ɾ/</td>
+	<td>nagu "l" sõnas "laul"</td>
+  </tr>
+  <tr>
+	<td>M</td>
+	<td>/m/</td>
+	<td>nagu "m" in "maja"</td>
+  </tr>
+  <tr>
+	<td>N</td>
+	<td>/n/</td>
+	<td>nagu "n" sõnas "nina"</td>
+  </tr>
+  <tr>
+	<td>O</td>
+	<td>/o/</td>
+	<td>nagu "o" sõnas "ohe"</td>
+  </tr>
+  <tr>
+	<td>P</td>
+	<td>/pʰ/, /p/, /f/</td>
+	<td>nagu "p" sõnas "pea"</td>
+  </tr>
+  <tr>
+	<td>S</td>
+	<td>/s/, /θ/, /ʃ/, /z/</td>
+	<td>nagu "s" sõnas "suu"</td>
+  </tr>
+  <tr>
+	<td>T</td>
+	<td>/tʰ/, /t/</td>
+	<td>nagu "t" sõnas "tigu"</td>
+  </tr>
+  <tr>
+	<td>U</td>
+	<td>/u/</td>
+	<td>nagu "u" sõnas "umbne"</td>
+  </tr>
+  <tr>
+	<td>W</td>
+	<td>/w/, /u/, /v/</td>
+	<td>nagu "w" inglise keeles või "v" sõnas "väike"</td>
+  </tr>
+  <tr>
+	<td>Y</td>
+	<td>/j/, /i/</td>
+	<td>nagu "j" sõnas "jah" või "i" sõnas "inimene"</td>
+  </tr>
+</table> 
+
+
+<p>
+Igas sõnas (kaasaarvatud liitsõnades) on alati rõhutatud viimane silp.<br />
+</p>
+
+<ul>
+<li><b>bamu</b> (tere) - baMU (/ba'mu/)</li>
+<li><b>dasopya</b> (maailm-rääkimine) - dasoPYA (/daso'pja/)</li>
+</ul>
+
+<br />
+<h3>
+Sõnad
+</h3>
+
+<p>
+Sõnu võib kasutada kõigi kõne osadena.<br />
+</p>
+
+<ul>
+<li><b>syo</b> - elu, elus, elama</li>
+</ul>
+
+<p>
+Kui tähendus pole kontekstist arusaadav, võib lisada järelliiteid.<br />
+</p>
+
+<ul>
+<li><b>syogen</b> - elu (elu-mõiste)</li>
+<li><b>syobey</b> - elus (elu-seotud)</li>
+<li><b>syosyu</b> - elama (elu-tegema)</li>
+</ul>
+
+<p>
+Artikleid ei ole ning sõnad saavad vaikimisi olla nii ainsuses kui ka mitmuses.<br />
+</p>
+
+<ul>
+<li><b>koko</b> - kivi, kivid</li>
+<li><b>moy koko</b> - mitu kivi</li>
+<li><b>man koko</b> - üks kivi</li>
+</ul>
+
+<p>
+Liitsõnu moodustatakse lihtsalt, kasutades kõigepealt täpsustavat sõna ja lisades peamist sõna selle järele.<br />
+</p>
+
+<ul>
+<li><b>tukatina</b> (jalg-sõrm) - varvas</li>
+<li><b>kwepagi</b> (vastupidi-avama) - sulgema</li>
+<li><b>musumodyokebo</b> (uni-mööbel-kate) - voodilina</li>
+</ul>
+
+<br />
+<h3>
+Laused
+</h3>
+
+<p>
+Lausetes eelneb "<b>a</b>" tegijatele, "<b>i</b>" tegusõnadele ja "<b>e</b>" sihitistele. Kontekst on alati lause alguses. <br />
+</p>
+
+<ul>
+<li><b>pindin, a dey i mabo e kagay</b> ("see-koht, [a] loom [i] söök [e] muru") - Siin sööb loom muru</li>
+</ul>
+
+<p>
+Omadussõnad tulevad nimisõnade ette ja määrsõnad tegusõnade ette. Muidu on nad identsed. <br />
+</p>
+
+<ul>
+<li><b>lase sapa i lase suki</b> ("kiire kala [i] kiire ujumine") - Kiire kala ujub kiiresti </li>
+</ul>
+
+<p>
+Eesasendid on nimisõnade ees. <br />
+</p>
+
+<ul>
+<li><b>daw i sami law gemo</b> ("inimene [i] kõnd sees aed") - Inimene kõnnib aias </li>
+</ul>
+
+<br />
+<h3>
+Grammatika
+</h3>
+
+<p>
+<b>mye</b> moodustab mineviku, <b>dyu</b> moodustab tuleviku.<br />
+</p>
+
+<ul>
+<li><b>kyu i mye legi; bay i dyu legi</b> ("sina [i] juba töö; mina [i] hakkan töö") - Sina töötasid; mina hakkan töötama</li>
+</ul>
+
+<p>
+Abitegusõnad järgnevad üksteisele vahetpidamatult.<br />
+</p>
+
+<ul>
+<li><b>swe i subi sedi plu</b> ("nad [i] peama proovima minema") - Nad peaksid proovima minna </li>
+</ul>
+
+<p>
+<b>hoy</b> tähistab omamist, kuid sellega saab ka omadussõnu ümber järjestada.<br />
+</p>
+
+<ul>
+<li><b>kopo hoy bay</b> ("raamat minust") - minu raamat </li>
+<li><b>kopo hoy lake</b> ("raamat punasest") - punane raamat </li>
+</ul>
+
+<p>
+Küsimuse moodustamiseks tuleb alustada lauset sõnaga <b>kay</b> ning lisada tundmatule <b>kya</b>.<br />
+</p>
+
+<ul>
+<li><b>kay a kotu i swa e kya?</b> ("küsimus [a] tund [i] on [e] mis") - Mis kell on?</li>
+</ul>
+
+<p>
+<b>teso</b> saab moodustada kõrvallause, nagu "see, kes/mis..".<br />
+</p>
+
+<ul>
+<li><b>swe i dani e gwa teso i swa e gwi</b> ("nad [i] meeldima [e] maja mis [i] on [e] hea") - Neile meeldivad majad, mis on head</li>
+</ul>
+
+<p>
+Dasopya keeles võib välja jätta iga sõna, mida saaks kontekstist välja lugeda.<br />
+</p>
+
+<ul>
+<li><b>hapa e bote</b> ("lill [e] sinine") - Lill (on) sinine</li>
+<li><b>i mapi</b> ("[i] aru saama") - (Ma) saan aru</li>
+<li><b>e masu</b> ("[e] hommmik") - (On) hommik</li>
+</ul>
+
+<p>
+"<b>u</b>" tähistab kaudseid sihitisi.<br />
+</p>
+
+<ul>
+<li><b>i day e san u swe</b> ("[i] andma [e] see [u] nad") - Anna see neile</li>
+</ul>
+
+<p>
+"<b>o</b>" tähistab sõnu, mis ei ole osa põhisõnavarast.<br />
+</p>
+
+<ul>
+<li><b>oKanada</b> - Kanada</li>
+<li><b>oPisa</b> - Pizza</li>
+</ul>
+
+<br />
+<h3>
+Põhisõnavara
+</h3>
+
+<table class="striped" style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:30%">Dasopya</th>
+    <th style="width:80%">Eesti keel</th>
+  </tr>
+  <tr>
+    <td>pin</td>
+    <td>see</td>
+  </tr>
+  <tr>
+    <td>san</td>
+    <td>see (seal)</td>
+  </tr>
+  <tr>
+    <td>bay</td>
+    <td>mina/ma</td>
+  </tr>
+  <tr>
+    <td>kyu</td>
+    <td>sina/sa, teie/te</td>
+  </tr>
+  <tr>
+    <td>swe</td>
+    <td>tema/ta, nemad/nad</td>
+  </tr>
+  <tr>
+    <td>daw</td>
+    <td>inimene, isik, keegi</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lay</td>
+    <td>jah</td>
+  </tr>
+  <tr>
+    <td>kwe</td>
+    <td>(vastandlik eesliide), ei, vastupidi</td>
+  </tr>
+  <tr>
+    <td>kate</td>
+    <td>õige, tõsi, täpne</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bamu</td>
+    <td>tere, head aega, tervitus, hüvastijätt</td>
+  </tr>
+  <tr>
+    <td>gwi</td>
+    <td>hea</td>
+  </tr>
+  <tr>
+    <td>dye</td>
+    <td>halb</td>
+  </tr>
+  <tr>
+    <td>gadu</td>
+    <td>aitäh, tänulikkus</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>swa</td>
+    <td>on, olema</td>
+  </tr>
+  <tr>
+    <td>syu</td>
+    <td>tegema</td>
+  </tr>
+  <tr>
+    <td>day</td>
+    <td>andma, laskma</td>
+  </tr>
+  <tr>
+    <td>pya</td>
+    <td>rääkima, kõne, keel, heli, hääl</td>
+  </tr>
+  <tr>
+    <td>plu</td>
+    <td>liikuma, minema</td>
+  </tr>
+ <tr>
+    <td>boti</td>
+    <td>tahtma, tahe, eesmärk, soov</td>
+  </tr>
+  <tr>
+    <td>tey</td>
+    <td>saama, võima, -tav</td>
+  </tr>
+  <tr>
+    <td>subi</td>
+    <td>peab, peaks, kohustus</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>polu</td>
+    <td>kõik, iga</td>
+  </tr>
+  <tr>
+    <td>tay</td>
+    <td>palju</td>
+  </tr>
+  <tr>
+    <td>pene</td>
+    <td>mõned, mõnevõrra, natuke, pigem, päris</td>
+  </tr>
+  <tr>
+    <td>moy</td>
+    <td>mitu</td>
+  </tr>
+  <tr>
+    <td>baw</td>
+    <td>rohkem</td>
+  </tr>
+  <tr>
+    <td>buki</td>
+    <td>kui, võrreldes, nagu</td>
+  </tr>
+  <tr>
+    <td>byu</td>
+    <td>kõige (ülivõrre)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>sya</td>
+    <td>ja, ning, pluss, veel, lisa</td>
+  </tr>
+  <tr>
+    <td>lodu</td>
+    <td>või, kumbki, ega</td>
+  </tr>
+  <tr>
+    <td>bemyu</td>
+    <td>aga, kuid, vaid</td>
+  </tr>
+  <tr>
+    <td>begu</td>
+    <td>kui, hüpoteetiliselt, olukord</td>
+  </tr>
+  <tr>
+    <td>taku</td>
+    <td>põhjus, sest, sellepärast</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>kay</td>
+    <td>küsimus, (küsilause tähistaja)</td>
+  </tr>
+  <tr>
+    <td>kya</td>
+    <td>mis, kumb</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mye</td>
+    <td>juba, enne, (mineviku tähistaja)</td>
+  </tr>
+  <tr>
+    <td>dyu</td>
+    <td>hakkab, pärast, (tuleviku tähistaja)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>boy</td>
+    <td>jaoks, peal, sees, (eesasendi tähistaja)</td>
+  </tr>
+  <tr>
+    <td>telu</td>
+    <td>selleks, et, (millegi/kellegi) poole</td>
+  </tr>
+  <tr>
+    <td>doke</td>
+    <td>millestki, milleltki</td>
+  </tr>
+  <tr>
+    <td>say</td>
+    <td>suund, (millegi/kellegi) poole, nõuanne, juhendus, orientatsioon</td>
+  </tr>
+  <tr>
+    <td>pay</td>
+    <td>üleval, peal, tõstma, tõusma</td>
+  </tr>
+  <tr>
+    <td>gyu</td>
+    <td>ees</td>
+  </tr>
+  <tr>
+    <td>law</td>
+    <td>sees</td>
+  </tr>
+  <tr>
+    <td>sye</td>
+    <td>kõrval, lähedal, külg</td>
+  </tr>
+  <tr>
+    <td>byo</td>
+    <td>läbi, kaudu, üle</td>
+  </tr>
+  <tr>
+    <td>koy</td>
+    <td>kauge, kaugele</td>
+  </tr>
+  <tr>
+    <td>mite</td>
+    <td>seas, vahel, -sisene</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>soy</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>man</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>swi</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>tya</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>pelo</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>kula</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>deli</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>bete</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>hopya</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>miko</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>ley</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>sehu</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>siku</td>
+    <td>1000</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bya</td>
+    <td>meessoost, mees, poiss</td>
+  </tr>
+  <tr>
+    <td>maw</td>
+    <td>naissoost, naine, tüdruk</td>
+  </tr>
+  <tr>
+    <td>domay</td>
+    <td>sõber</td>
+  </tr>
+  <tr>
+    <td>milu</td>
+    <td>armastus</td>
+  </tr>
+  <tr>
+    <td>pana</td>
+    <td>käsi, käepide, hoidma</td>
+  </tr>
+  <tr>
+    <td>loy</td>
+    <td>silm, vaatama, nägema, pilk</td>
+  </tr>
+  <tr>
+    <td>deka</td>
+    <td>kõrv, kuulma, kuulama</td>
+  </tr>
+  <tr>
+    <td>paka</td>
+    <td>pea, juht</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>dey</td>
+    <td>loom, olend</td>
+  </tr>
+  <tr>
+    <td>matya</td>
+    <td>kass, kassitaoline</td>
+  </tr>
+  <tr>
+    <td>hugwa</td>
+    <td>koer, koerataoline</td>
+  </tr>
+  <tr>
+    <td>pila</td>
+    <td>lind</td>
+  </tr>
+  <tr>
+    <td>sapa</td>
+    <td>kala</td>
+  </tr>
+  <tr>
+    <td>pasa</td>
+    <td>taim, istutama</td>
+  </tr>
+  <tr>
+    <td>kikaw</td>
+    <td>puu</td>
+  </tr>
+  <tr>
+    <td>hapa</td>
+    <td>lill</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>gwa</td>
+    <td>ehitis, maja, ehitama</td>
+  </tr>
+  <tr>
+    <td>gan</td>
+    <td>tuba, ruum</td>
+  </tr>
+  <tr>
+    <td>kiso</td>
+    <td>tool, istuma</td>
+  </tr>
+  <tr>
+    <td>lado</td>
+    <td>laud</td>
+  </tr>
+  <tr>
+    <td>pyo</td>
+    <td>kasutama</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>doy</td>
+    <td>suur</td>
+  </tr>
+  <tr>
+    <td>kumye</td>
+    <td>pikk, pikkus</td>
+  </tr>
+  <tr>
+    <td>sike</td>
+    <td>värv, toon</td>
+  </tr>
+  <tr>
+    <td>lake</td>
+    <td>punane</td>
+  </tr>
+  <tr>
+    <td>lamye</td>
+    <td>kollane</td>
+  </tr>
+  <tr>
+    <td>bote</td>
+    <td>sinine</td>
+  </tr>
+  <tr>
+    <td>kahe</td>
+    <td>must</td>
+  </tr>
+  <tr>
+    <td>buse</td>
+    <td>valge</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lon</td>
+    <td>aeg, millal, kui</td>
+  </tr>
+  <tr>
+    <td>tonu</td>
+    <td>aasta</td>
+  </tr>
+  <tr>
+    <td>loso</td>
+    <td>kuu</td>
+  </tr>
+  <tr>
+    <td>han</td>
+    <td>päev, kuupäev</td>
+  </tr>
+  <tr>
+    <td>kotu</td>
+    <td>tund</td>
+  </tr>
+  <tr>
+    <td>mebyu</td>
+    <td>minut</td>
+  </tr>
+  <tr>
+    <td>busu</td>
+    <td>sekund</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mabo</td>
+    <td>söök, toit, eine, pala, sööma, tarbima</td>
+  </tr>
+  <tr>
+    <td>bugo</td>
+    <td>jook, jooma</td>
+  </tr>
+  <tr>
+    <td>kupa</td>
+    <td>puuvili</td>
+  </tr>
+  <tr>
+    <td>hidwa</td>
+    <td>köögivili</td>
+  </tr>
+  <tr>
+    <td>lano</td>
+    <td>sai, leib, päts</td>
+  </tr>
+  <tr>
+    <td>simo</td>
+    <td>riis</td>
+  </tr>
+  <tr>
+    <td>toki</td>
+    <td>süüa tegema</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td></td>
+  </tr>
+</table> 
+
+<br /><br />
+<p style="color:grey;">
+Tõlkinud Fidgetie. Lehekülje stiili eeskujuks on elefen.org
+</p>
+
+</div> <!-- end Estonian section -->
+
+<div id="nederlands">
+
+<br />
+<h1>Introductie op Nederlands</h1>
+<hr> 
+<a href="dasopya.html">&lt; Terug naar de inhoud</a> <br />
+
+<br />
+
+ <table>
+  <tr>
+    <th>Nederlands</th>
+    <th>Dasopya</th>
+  </tr>
+  <tr>
+    <td>Dasopya is een taal die gemaakt werd, om simpel en voor iedereen op de wereld makkelijk te zijn om te leren.</td>
+    <td>dasopya i swa e pya teso i mye dwetona telu i swa e kwetose e kwepide telu dubi hoy poludaw hoy labe daso.</td>
+  </tr>
+  <tr>
+    <td>De grammatica heeft weinig regelen en geen uitzonderingen.</td>
+    <td>goy pyasahu i hay e kwetay sahu, sya e soy sibyegoy.</td>
+  </tr>
+  <tr>
+    <td>De orthografie is consequent en elke letter maakt altijd hetzelfde geluid.</td>
+    <td>libudoli i swa e soytawbey, sya a polu libu i polulon tona e kwetaw toso.</td>
+  </tr>
+  <tr>
+    <td>Het heeft maar ongeveer 800 wortels die vrij en makkelijk kunnen worden samengesteld.</td>
+    <td>goy i dole hay e kwetitu 800 gulo samu, teso i tey samuhapu hoy kwesepobey sya kwepidebey.</td>
+  </tr>
+  <tr>
+    <td>Elk woord is van de grond af nieuw gemaakt, dus geen land krijgt er een voordeel.</td>
+    <td>polu samu i mye dwetona doke soyhupyo; boysesey, i swa e soy petu hoy mey matu.</td>
+  </tr>
+</table> 
+
+<br />
+<h2>Grondslagen</h2>
+<hr> 
+
+<h3>
+Alfabet en Uitspraak
+</h3>
+
+<p>
+Iedere letter word altijk identiek uitgesproken. Sommige letters hebben meerdere uitspraken, afhankelijk van de preferentie van de spreker, maar de voorkeur wordt aan de eerste in de lijst gegeven. Hoofdletters zijn op Dasopya niet nodig.<br />
+</p>
+
+<table style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:10%">Letter</th>
+    <th style="width:20%">IPA</th>
+	<th>Voorbeeld</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>/a/</td>
+	<td>als "a" in "vader"</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>/b/, /v/</td>
+	<td>als "b" in "boek"</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>/d/, /ð̞/</td>
+	<td>als "d" in "de"</td>
+  </tr>
+  <tr>
+	<td>E</td>
+	<td>/e/</td>
+	<td>als "e" in "bed"</td>
+  </tr>
+  <tr>
+	<td>G</td>
+	<td>/g/</td>
+	<td>als "g" in "gay"</td>
+  </tr>
+  <tr>
+	<td>H</td>
+	<td>/h/, /x/, /ɾ/</td>
+	<td>als "h" in "huis"</td>
+  </tr>
+  <tr>
+	<td>I</td>
+	<td>/i/</td>
+	<td>als "i" in "ski"</td>
+  </tr>
+  <tr>
+	<td>K</td>
+	<td>/kʰ/, /k/</td>
+	<td>als "k" in "kind"</td>
+  </tr>
+  <tr>
+	<td>L</td>
+	<td>/l/, /ɾ/</td>
+	<td>als "l" in "leven"</td>
+  </tr>
+  <tr>
+	<td>M</td>
+	<td>/m/</td>
+	<td>als "m" in "moeder"</td>
+  </tr>
+  <tr>
+	<td>N</td>
+	<td>/n/</td>
+	<td>als "n" in "negen"</td>
+  </tr>
+  <tr>
+	<td>O</td>
+	<td>/o/</td>
+	<td>als "o" in "komen"</td>
+  </tr>
+  <tr>
+	<td>P</td>
+	<td>/pʰ/, /p/, /f/</td>
+	<td>als "p" in "pijn"</td>
+  </tr>
+  <tr>
+	<td>S</td>
+	<td>/s/, /θ/, /ʃ/, /z/</td>
+	<td>als "s" in "set"</td>
+  </tr>
+  <tr>
+	<td>T</td>
+	<td>/tʰ/, /t/</td>
+	<td>als "t" in "tijd"</td>
+  </tr>
+  <tr>
+	<td>U</td>
+	<td>/u/</td>
+	<td>als "oe" in "koe"</td>
+  </tr>
+  <tr>
+	<td>W</td>
+	<td>/w/, /u/, /v/</td>
+	<td>als "w" in Engels "win" of "oe" in "koe"</td>
+  </tr>
+  <tr>
+	<td>Y</td>
+	<td>/j/, /i/</td>
+	<td>als "j" in "ja" of "i" in "ski"</td>
+  </tr>
+</table> 
+
+
+<p>
+Elk woord (met inbegrip van samenstellingen) woord altijd op de laatste lettergreep beklemtoond.<br />
+</p>
+
+<ul>
+<li><b>bamu</b> (hallo) - baMU (/ba'mu/)</li>
+<li><b>dasopya</b> (wereld-spreken) - dasoPYA (/daso'pja/)</li>
+</ul>
+
+<br />
+<h3>
+Woorden
+</h3>
+
+<p>
+Woorden kunnen als iedere woordsoort worden gebruikt.<br />
+</p>
+
+<ul>
+<li><b>syo</b> - (het) leven, in leven, leven</li>
+</ul>
+
+<p>
+Als context het niet duidelijk maakt, kunnen suffixen worden toegevoegd.<br />
+</p>
+
+<ul>
+<li><b>syogen</b> - (het) leven (leven-concept)</li>
+<li><b>syobey</b> - in leven (leven-bijhorend)</li>
+<li><b>syosyu</b> - leven (leven-doen)</li>
+</ul>
+
+<p>
+Er zijn geen articelen en woorden kunnen enkelvoud of meervoud zijn.<br />
+</p>
+
+<ul>
+<li><b>koko</b> - steen, stenen, de steen, een steen</li>
+<li><b>moy koko</b> - meerdere stenen</li>
+<li><b>man koko</b> - één steen</li>
+</ul>
+
+<p>
+Samenstellingen worden vrij gevormd door eerst de beschrijvende woorden en aan het eind het beschreven woord te gebruiken.<br />
+</p>
+
+<ul>
+<li><b>tukatina</b> (voet-vinger) - teen</li>
+<li><b>kwepagi</b> (tegendeel-open) - gesloten</li>
+<li><b>musumodyokebo</b> (slaap-meubel-bedekking) - laken</li>
+</ul>
+
+<br />
+<h3>
+Zinnen
+</h3>
+
+<p>
+In zinnen komt "<b>a</b>" voor subjecten, "<b>i</b>" voor werkwoorden, en "<b>e</b>" voor objecten. Context komt altijd aan het begin. <br />
+</p>
+
+<ul>
+<li><b>pindin, a dey i mabo e kagay</b> ("deze-plaats, [a] dier [i] eten [e] gras") - Hier eet het dier gras.</li>
+</ul>
+
+<p>
+Bijvoeglijke naamwoorden komen voor zelfstandige naamwoorden, en bijwoorden komen voor werkwoorden. Verder zijn ze identiek. <br />
+</p>
+
+<ul>
+<li><b>lase sapa i lase suki</b> ("snel vis [i] snel zwemmen") - Snelle vissen zwemmen snel. </li>
+</ul>
+
+<p>
+Voorzetsel komen voor naamwoorden. <br />
+</p>
+
+<ul>
+<li><b>daw i sami law gemo</b> ("persoon [i] gaan in tuin") - The persoon gaat in de tuin. </li>
+</ul>
+
+<br />
+<h3>
+Grammatica
+</h3>
+
+<p>
+<b>mye</b> vormt de verleden tijd, <b>dyu</b> vormt de toekomende tijd.<br />
+</p>
+
+<ul>
+<li><b>kyu i mye legi; bay i dyu legi</b> ("jij [i] al werken; ik [i] zal werken") - Jij heeft gewerkt; ik zal werken.</li>
+</ul>
+
+<p>
+Hulpwerkwoorden volgen direct op elkaar.<br />
+</p>
+
+<ul>
+<li><b>swe i subi sedi plu</b> ("zij [i] zouden proberen gaan") - Zij zouden proberen te gaan. </li>
+</ul>
+
+<p>
+<b>hoy</b> markeert bezit, maar kan ook bijvoeglijke naamwoorden herordenen.<br />
+</p>
+
+<ul>
+<li><b>kopo hoy bay</b> ("boek van ik") - mijn boek </li>
+<li><b>kopo hoy lake</b> ("boek van rood") - rood boek </li>
+</ul>
+
+<p>
+Om een vraag te vormen begin je de zin met <b>kay</b> en zet <b>kya</b> aan het onbekende.<br />
+</p>
+
+<ul>
+<li><b>kay a kotu i swa e kya?</b> ("vraag [a] uur [i] is [e] wat") - Hoe laat is het?</li>
+</ul>
+
+<p>
+<b>teso</b> kan een bijzin vormen, zoals "dat" of "wie".<br />
+</p>
+
+<ul>
+<li><b>swe i dani e gwa teso i swa e gwi</b> ("zij [i] houden-van [e] huis dat [i] is [e] goed") - Ze houden van huizen, die goed zijn.</li>
+</ul>
+
+<p>
+Dasopya is een pro-droptaal, dus het laat toe, dat ieder woord, dat door de context duidelijk is, kan worden weggelaten.<br />
+</p>
+
+<ul>
+<li><b>hapa e bote</b> ("bloem [e] blauw") - De bloem (is) blauw</li>
+<li><b>i mapi</b> ("[i] verstaan") - (Ik) versta.</li>
+<li><b>e masu</b> ("[e] morgen") - (Het is) morgen</li>
+</ul>
+
+<p>
+"<b>u</b>" markeert indirecte objecten.<br />
+</p>
+
+<ul>
+<li><b>i day e san u swe</b> ("[i] geven [e] dat [u] hun") - Geef dat hun.</li>
+</ul>
+
+<p>
+"<b>o</b>" markeert elk woord buiten de basiswoordenschat.<br />
+</p>
+
+<ul>
+<li><b>oKanada</b> - Canada</li>
+<li><b>oPisa</b> - pizza</li>
+</ul>
+
+<br />
+<h3>
+Basiswoordenschat
+</h3>
+
+<table class="striped" style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:30%">Dasopya</th>
+    <th style="width:80%">Nederlands</th>
+  </tr>
+  <tr>
+    <td>pin</td>
+    <td>dit, deze</td>
+  </tr>
+  <tr>
+    <td>san</td>
+    <td>dat, die</td>
+  </tr>
+  <tr>
+    <td>bay</td>
+    <td>ik, me</td>
+  </tr>
+  <tr>
+    <td>kyu</td>
+    <td>jij, jullie, je, u</td>
+  </tr>
+  <tr>
+    <td>swe</td>
+    <td>hij, zij, ze (enkel- en meervoud), het</td>
+  </tr>
+  <tr>
+    <td>daw</td>
+    <td>persoon, mens, men (pronomen)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lay</td>
+    <td>ja</td>
+  </tr>
+  <tr>
+    <td>kwe</td>
+    <td>(ommekeerprefix), nee, tegendeel</td>
+  </tr>
+  <tr>
+    <td>kate</td>
+    <td>correct, accuraat, juist</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bamu</td>
+    <td>hallo, groet, tot ziens</td>
+  </tr>
+  <tr>
+    <td>gwi</td>
+    <td>goed</td>
+  </tr>
+  <tr>
+    <td>dye</td>
+    <td>slecht</td>
+  </tr>
+  <tr>
+    <td>gadu</td>
+    <td>bedankt, dank</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>swa</td>
+    <td>is, ben, zijn</td>
+  </tr>
+  <tr>
+    <td>syu</td>
+    <td>doen, maken</td>
+  </tr>
+  <tr>
+    <td>day</td>
+    <td>(ver-)geven, verlenen, uitsturen</td>
+  </tr>
+  <tr>
+    <td>pya</td>
+    <td>spreken, praten, rede, spraak, dierengeluid</td>
+  </tr>
+  <tr>
+    <td>plu</td>
+    <td>bewegen, gaan</td>
+  </tr>
+ <tr>
+    <td>boti</td>
+    <td>willen, wensen, intentie, wil</td>
+  </tr>
+  <tr>
+    <td>tey</td>
+    <td>kunnen, mogen, -baar</td>
+  </tr>
+  <tr>
+    <td>subi</td>
+    <td>moeten, zullen, plicht</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>polu</td>
+    <td>alles, alle, elk, ieder</td>
+  </tr>
+  <tr>
+    <td>tay</td>
+    <td>veel, heel, zeer, werkelijk</td>
+  </tr>
+  <tr>
+    <td>pene</td>
+    <td>sommige, wat, liever, tamelijk</td>
+  </tr>
+  <tr>
+    <td>moy</td>
+    <td>meerdere</td>
+  </tr>
+  <tr>
+    <td>baw</td>
+    <td>meer</td>
+  </tr>
+  <tr>
+    <td>buki</td>
+    <td>vergelijken, (zo-)als, dan, relatief</td>
+  </tr>
+  <tr>
+    <td>byu</td>
+    <td>meest, -st (superlatief)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>sya</td>
+    <td>en, plus, toevoegen, ook, aanvullend</td>
+  </tr>
+  <tr>
+    <td>lodu</td>
+    <td>of, ofwel</td>
+  </tr>
+  <tr>
+    <td>bemyu</td>
+    <td>maar, echter</td>
+  </tr>
+  <tr>
+    <td>begu</td>
+    <td>als, of, theoretisch, scenario</td>
+  </tr>
+  <tr>
+    <td>taku</td>
+    <td>reden, omdat, oorsprong, vanwege</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>kay</td>
+    <td>vraag, (vraagmerk)</td>
+  </tr>
+  <tr>
+    <td>kya</td>
+    <td>dat, die, wie (betrekkelijk)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mye</td>
+    <td>al, voor(-dat), (verleden tijdmerk)</td>
+  </tr>
+  <tr>
+    <td>dyu</td>
+    <td>zullen, gaan, na(-dat), (toekomende tijdmerk)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>boy</td>
+    <td>voor, bij, van, in, op, (voorzetselmerk)</td>
+  </tr>
+  <tr>
+    <td>telu</td>
+    <td>naar, toe (doel), om te</td>
+  </tr>
+  <tr>
+    <td>doke</td>
+    <td>van(-af), uit</td>
+  </tr>
+  <tr>
+    <td>say</td>
+    <td>richting, naar, leiding, oriëntatie</td>
+  </tr>
+  <tr>
+    <td>pay</td>
+    <td>hoog, boven, op, over, (op-)tillen, (op-)heffen</td>
+  </tr>
+  <tr>
+    <td>gyu</td>
+    <td>voren, voor</td>
+  </tr>
+  <tr>
+    <td>law</td>
+    <td>in, binnen</td>
+  </tr>
+  <tr>
+    <td>sye</td>
+    <td>zijkant, aangrenzend</td>
+  </tr>
+  <tr>
+    <td>byo</td>
+    <td>door, trans-</td>
+  </tr>
+  <tr>
+    <td>koy</td>
+    <td>ver, tele-</td>
+  </tr>
+  <tr>
+    <td>mite</td>
+    <td>tussen, onder, inter-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>soy</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>man</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>swi</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>tya</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>pelo</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>kula</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>deli</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>bete</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>hopya</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>miko</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>ley</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>sehu</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>siku</td>
+    <td>1000</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bya</td>
+    <td>mannelijk, man, jongen</td>
+  </tr>
+  <tr>
+    <td>maw</td>
+    <td>vrouwelijk, vrouw, meisje</td>
+  </tr>
+  <tr>
+    <td>domay</td>
+    <td>vriend</td>
+  </tr>
+  <tr>
+    <td>milu</td>
+    <td>liefde</td>
+  </tr>
+  <tr>
+    <td>pana</td>
+    <td>hand, handvat, houden</td>
+  </tr>
+  <tr>
+    <td>loy</td>
+    <td>oog, zien, kijken, bekijken</td>
+  </tr>
+  <tr>
+    <td>deka</td>
+    <td>oor, horen, luisteren</td>
+  </tr>
+  <tr>
+    <td>paka</td>
+    <td>hoofd, leider</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>dey</td>
+    <td>dier, creatuur</td>
+  </tr>
+  <tr>
+    <td>matya</td>
+    <td>kat, katachtig</td>
+  </tr>
+  <tr>
+    <td>hugwa</td>
+    <td>hond, hondachtig</td>
+  </tr>
+  <tr>
+    <td>pila</td>
+    <td>vogel</td>
+  </tr>
+  <tr>
+    <td>sapa</td>
+    <td>vis</td>
+  </tr>
+  <tr>
+    <td>pasa</td>
+    <td>plant, planten</td>
+  </tr>
+  <tr>
+    <td>kikaw</td>
+    <td>boom</td>
+  </tr>
+  <tr>
+    <td>hapa</td>
+    <td>bloem</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>gwa</td>
+    <td>gebouw, huis, bouwen, construeren</td>
+  </tr>
+  <tr>
+    <td>gan</td>
+    <td>kamer, ruimte</td>
+  </tr>
+  <tr>
+    <td>kiso</td>
+    <td>stoel, zitten</td>
+  </tr>
+  <tr>
+    <td>lado</td>
+    <td>bord, bureau</td>
+  </tr>
+  <tr>
+    <td>pyo</td>
+    <td>gebruiken</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>doy</td>
+    <td>groot</td>
+  </tr>
+  <tr>
+    <td>kumye</td>
+    <td>lang, lengte</td>
+  </tr>
+  <tr>
+    <td>sike</td>
+    <td>verf, tint</td>
+  </tr>
+  <tr>
+    <td>lake</td>
+    <td>rood</td>
+  </tr>
+  <tr>
+    <td>lamye</td>
+    <td>geel</td>
+  </tr>
+  <tr>
+    <td>bote</td>
+    <td>blauw</td>
+  </tr>
+  <tr>
+    <td>kahe</td>
+    <td>zwart</td>
+  </tr>
+  <tr>
+    <td>buse</td>
+    <td>wit</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lon</td>
+    <td>tijd, wanneer</td>
+  </tr>
+  <tr>
+    <td>tonu</td>
+    <td>jaar</td>
+  </tr>
+  <tr>
+    <td>loso</td>
+    <td>maan, maand</td>
+  </tr>
+  <tr>
+    <td>han</td>
+    <td>dag, datum</td>
+  </tr>
+  <tr>
+    <td>kotu</td>
+    <td>uur</td>
+  </tr>
+  <tr>
+    <td>mebyu</td>
+    <td>minuut</td>
+  </tr>
+  <tr>
+    <td>busu</td>
+    <td>seconde</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mabo</td>
+    <td>eten, maaltijd, consumeren</td>
+  </tr>
+  <tr>
+    <td>bugo</td>
+    <td>drinken, drank</td>
+  </tr>
+  <tr>
+    <td>kupa</td>
+    <td>fruit, vrucht</td>
+  </tr>
+  <tr>
+    <td>hidwa</td>
+    <td>groente</td>
+  </tr>
+  <tr>
+    <td>lano</td>
+    <td>brood, broodje, kadetje</td>
+  </tr>
+  <tr>
+    <td>simo</td>
+    <td>rijst</td>
+  </tr>
+  <tr>
+    <td>toki</td>
+    <td>koken</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td></td>
+  </tr>
+</table> 
+
+<br /><br />
+<p style="color:grey;">
+Vertaald door Beady5831. Stijl van de website gebaseerd op elefen.org
+</p>
+
+</div> <!-- end Dutch section -->
+
+<div id="tokipona">
+
+<br />
+<h1>open sona kepeken toki pona</h1>
+<hr> 
+<a href="dasopya.html">&lt; weka tawa lipu lawa</a> <br />
+
+<br />
+
+ <table>
+  <tr>
+    <th>toki pona</th>
+    <th>toki Tasopa</th>
+  </tr>
+  <tr>
+    <td>toki Tasopa li toki pali tan pona tawa kama sona tawa jan pi ma ale.</td>
+    <td>dasopya i swa e pya teso i mye dwetona telu i swa e kwetose e kwepide telu dubi hoy poludaw hoy labe daso.</td>
+  </tr>
+  <tr>
+    <td>toki nasin ona li jo e nasin lawa lili, e nasin lawa ante ala.</td>
+    <td>goy pyasahu i hay e kwetay sahu, sya e soy sibyegoy.</td>
+  </tr>
+  <tr>
+    <td>tenpo ale la sitelen nimi li ante ala. tenpo ale la sitelen nimi li kalama sama.</td>
+    <td>libudoli i swa e soytawbey, sya a polu libu i polulon tona e kwetaw toso.</td>
+  </tr>
+  <tr>
+    <td>ona li jo poka e nimi noka 800. nimi mute li ken wan kepeken nasin pona.</td>
+    <td>goy i dole hay e kwetitu 800 gulo samu, teso i tey samuhapu hoy kwesepobey sya kwepidebey.</td>
+  </tr>
+  <tr>
+    <td>nimi ale li pali tan ala. tan ni la, ma ala li lawa.</td>
+    <td>polu samu i mye dwetona doke soyhupyo; boysesey, i swa e soy petu hoy mey matu.</td>
+  </tr>
+</table> 
+
+<br />
+<h2>nasin open</h2>
+<hr> 
+
+<h3>
+sitelen nimi en kalama uta
+</h3>
+
+<p>
+tenpo ale la kalama pi sitelen nimi li sama. jan wile la, sitelen nimi li ken kalama e ante. taso, kalama anpa pi nanpa wan li pona mute. jan wile la, toki Tasopa li jo e sitelen nimi suli ala.<br />
+</p>
+
+<table style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:10%">sitelen</th>
+    <th style="width:20%">sitelen IPA</th>
+	<th>kalama</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>/a/</td>
+	<td>A</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>/b/, /v/</td>
+	<td>P taso wawa ala</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>/d/, /ð̞/</td>
+	<td>T taso wawa ala</td>
+  </tr>
+  <tr>
+	<td>E</td>
+	<td>/e/</td>
+	<td>E</td>
+  </tr>
+  <tr>
+	<td>G</td>
+	<td>/g/</td>
+	<td>K taso wawa ala</td>
+  </tr>
+  <tr>
+	<td>H</td>
+	<td>/h/, /x/, /ɾ/</td>
+	<td>kalama pi kon uta pana</td>
+  </tr>
+  <tr>
+	<td>I</td>
+	<td>/i/</td>
+	<td>I</td>
+  </tr>
+  <tr>
+	<td>K</td>
+	<td>/kʰ/, /k/</td>
+	<td>K taso wawa taso</td>
+  </tr>
+  <tr>
+	<td>L</td>
+	<td>/l/, /ɾ/</td>
+	<td>L</td>
+  </tr>
+  <tr>
+	<td>M</td>
+	<td>/m/</td>
+	<td>M</td>
+  </tr>
+  <tr>
+	<td>N</td>
+	<td>/n/</td>
+	<td>N</td>
+  </tr>
+  <tr>
+	<td>O</td>
+	<td>/o/</td>
+	<td>O</td>
+  </tr>
+  <tr>
+	<td>P</td>
+	<td>/pʰ/, /p/, /f/</td>
+	<td>P taso wawa taso</td>
+  </tr>
+  <tr>
+	<td>S</td>
+	<td>/s/, /θ/, /ʃ/, /z/</td>
+	<td>S</td>
+  </tr>
+  <tr>
+	<td>T</td>
+	<td>/tʰ/, /t/</td>
+	<td>T taso wawa taso</td>
+  </tr>
+  <tr>
+	<td>U</td>
+	<td>/u/</td>
+	<td>U</td>
+  </tr>
+  <tr>
+	<td>W</td>
+	<td>/w/, /u/, /v/</td>
+	<td>W anu U</td>
+  </tr>
+  <tr>
+	<td>Y</td>
+	<td>/j/, /i/</td>
+	<td>J anu I</td>
+  </tr>
+</table> 
+
+
+<p>
+kalama wawa lon kalama pini lon nimi ale.<br />
+</p>
+
+<ul>
+<li><b>bamu</b> (toki a) - baMU (/ba'mu/)</li>
+<li><b>dasopya</b> (ma-toki) - dasoPYA (/daso'pja/)</li>
+</ul>
+
+<br />
+<h3>
+nimi
+</h3>
+
+<p>
+jan li ken kepeken e nimi sama nimi ijo anu nimi pali anu nimi pilin.<br />
+</p>
+
+<ul>
+<li><b>syo</b> - moli ala, kon pi moli ala, pali e moli ala, sama moli ala</li>
+</ul>
+
+<p>
+ijo poka li ken ala pali e ken sona la, jan li ken pana e nimi noka.<br />
+</p>
+
+<ul>
+<li><b>syogen</b> - kon pi moli ala (moli ala-kon)</li>
+<li><b>syobey</b> - sama moli ala (moli ala-sama)</li>
+<li><b>syosyu</b> - pali e moli ala (moli ala-pali)</li>
+</ul>
+
+<p>
+nimi li wan anu mute.<br />
+</p>
+
+<ul>
+<li><b>koko</b> - kiwen, kiwen wan, kiwen mute</li>
+<li><b>moy koko</b> - kiwen mute</li>
+<li><b>man koko</b> - kiwen wan</li>
+</ul>
+
+<p>
+nimi pilin li open la nimi noka li pini la jan li ken pali e nimi mute wan.<br />
+</p>
+
+<ul>
+<li><b>tukatina</b> (noka-(palisa luka)) - palisa lili noka</li>
+<li><b>kwepagi</b> (ala-open) - pini</li>
+<li><b>musumodyokebo</b> (lape-supa-selo) - selo pi supa lape</li>
+</ul>
+
+<br />
+<h3>
+kulupu nimi
+</h3>
+
+<p>
+lon kulupu nimi la: "a" li monsi pi nimi lawa. "i" li monsi pi nimi pali. "e" li monsi pi nimi pali kama. tenpo ale la ijo poka lon open. <br />
+</p>
+
+<ul>
+<li><b>pindin, a dey i mabo e kagay</b> ("ni-ma, [a] soweli [i] moku [e] kasi ma") - ni ma la, soweli li moku e kasi ma.</li>
+</ul>
+
+<p>
+nimi pilin lon monsi nimi ijo anu lon monsi nimi pali. <br />
+</p>
+
+<ul>
+<li><b>lase sapa i lase suki</b> ("(wawa tawa) kala [i] (wawa tawa) (tawa telo)") - kala pi wawa tawa li tawa telo pi wawa tawa.</li>
+</ul>
+
+<p>
+nimi pi monsi lon li kama lon monsi nimi ijo.<br />
+</p>
+
+<ul>
+<li><b>daw i sami law gemo</b> ("jan [i] (tawa noka) lon (ma kasi)") - jan li tawa noka lon ma kasi.</li>
+</ul>
+
+<br />
+<h3>
+toki nasin
+</h3>
+
+<p>
+<b>mye</b> li pali e tenpo pini. <b>dyu</b> li pali e tenpo kama.<br />
+</p>
+
+<ul>
+<li><b>kyu i mye legi; bay i dyu legi</b> ("sina [i] (tenpo pini) pali; mi [i] (tenpo kama) pali") - tenpo pini la sina pali; tenpo kama la mi pali.</li>
+</ul>
+
+<p>
+nimi pali namako li lon monsi nimi pali.<br />
+</p>
+
+<ul>
+<li><b>swe i subi sedi plu</b> ("ona [i] wile alasa tawa") - ona li wile alasa tawa. </li>
+</ul>
+
+<p>
+<b>hoy</b> li pali e jo, li ken ante e nasin pi nimi pilin.<br />
+</p>
+
+<ul>
+<li><b>kopo hoy bay</b> ("(kulupu lipu) pi mi") - kulupu lipu mi </li>
+<li><b>kopo hoy lake</b> ("(kulupu lipu) pi loje") - kulupu lipu loje </li>
+</ul>
+
+<p>
+jan li wile pali e kulupu nimi pi wile sona la, jan li ken open kepeken "kay" e kulupu nimi, li kepeken "kya" lon nimi pi wile sona.<br />
+</p>
+
+<ul>
+<li><b>kay a kotu i swa e kya?</b> ("(wile sona) [a] (tenpo suli) [i] li [e] seme") - tenpo li seme?</li>
+</ul>
+
+<p>
+<b>teso</b> li ken pali e kulupu nimi namako.<br />
+</p>
+
+<ul>
+<li><b>swe i dani e gwa teso i swa e gwi</b> ("ona [i] (pilin pona tawa) [e] tomo [teso] [i] li [e] pona") - tomo li pona la ona li pilin pona tawa tomo.</li>
+</ul>
+
+<p>
+ijo poka li pali e ken sona la, toki Tasopa li ken weka e nimi.<br />
+</p>
+
+<ul>
+<li><b>hapa e bote</b> ("(kasi kule) [e] laso") - kasi kule (li) laso</li>
+<li><b>i mapi</b> ("[i] sona") - (mi) sona</li>
+<li><b>e masu</b> ("[e] tenpo suno") - tenpo suno (li lon)</li>
+</ul>
+
+<p>
+"<b>u</b>" li monsi pi nimi pali kama pi lawa ala.<br />
+</p>
+
+<ul>
+<li><b>i day e san u swe</b> ("[i] pana [e] ni [u] ona") - o pana e ni tawa ona</li>
+</ul>
+
+<p>
+"<b>o</b>" li monsi pi nimi tan toki ante.<br />
+</p>
+
+<ul>
+<li><b>oKanada</b> - ma Kanata</li>
+<li><b>oPisa</b> - moku Pisa (anu mulapisu anu pan pi kili loje)</li>
+</ul>
+
+<br />
+<h3>
+nimi pona
+</h3>
+
+<table class="striped" style="width:50%; margin-left:0px;">
+  <tr>
+    <th style="width:30%">toki Tasopa</th>
+    <th style="width:80%">toki pona</th>
+  </tr>
+  <tr>
+    <td>pin</td>
+    <td>ni (poka)</td>
+  </tr>
+  <tr>
+    <td>san</td>
+    <td>ni (poka ala)</td>
+  </tr>
+  <tr>
+    <td>bay</td>
+    <td>mi</td>
+  </tr>
+  <tr>
+    <td>kyu</td>
+    <td>sina</td>
+  </tr>
+  <tr>
+    <td>swe</td>
+    <td>ona</td>
+  </tr>
+  <tr>
+    <td>daw</td>
+    <td>jan</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lay</td>
+    <td>lon, pona (tawa toki pi pilin sama)</td>
+  </tr>
+  <tr>
+    <td>kwe</td>
+    <td>ala (tawa ante pi nimi kon)</td>
+  </tr>
+  <tr>
+    <td>kate</td>
+    <td>lon, pona (tawa toki e ni: lon li lon)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bamu</td>
+    <td>toki, toki a (tawa toki open tawa jan)</td>
+  </tr>
+  <tr>
+    <td>gwi</td>
+    <td>pona</td>
+  </tr>
+  <tr>
+    <td>dye</td>
+    <td>ike</td>
+  </tr>
+  <tr>
+    <td>gadu</td>
+    <td>sina pona, pona tawa sina</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>swa</td>
+    <td>li, lon (tawa toki e wan li tu)</td>
+  </tr>
+  <tr>
+    <td>syu</td>
+    <td>pali</td>
+  </tr>
+  <tr>
+    <td>day</td>
+    <td>pana</td>
+  </tr>
+  <tr>
+    <td>pya</td>
+    <td>toki, toki kulupu, pali toki, mu</td>
+  </tr>
+  <tr>
+    <td>plu</td>
+    <td>tawa (e ijo), (li) tawa</td>
+  </tr>
+ <tr>
+    <td>boti</td>
+    <td>wile (tawa ijo pi pilin pona)</td>
+  </tr>
+  <tr>
+    <td>tey</td>
+    <td>ken</td>
+  </tr>
+  <tr>
+    <td>subi</td>
+    <td>wile (jan pilin pona tawa ijo anu jan pilin ike tawa ijo la, jan wile)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>polu</td>
+    <td>ale</td>
+  </tr>
+  <tr>
+    <td>tay</td>
+    <td>mute</td>
+  </tr>
+  <tr>
+    <td>pene</td>
+    <td>mute lili</td>
+  </tr>
+  <tr>
+    <td>moy</td>
+    <td>wan ala, mute</td>
+  </tr>
+  <tr>
+    <td>baw</td>
+    <td>mute (mute mute tawa ijo ante pi mute lili)</td>
+  </tr>
+  <tr>
+    <td>buki</td>
+    <td>sama, ante sama (tawa toki e ni: wan li sama tu, anu wan li ante sama tu)</td>
+  </tr>
+  <tr>
+    <td>byu</td>
+    <td>mute mute (tawa toki e ni: ale li lili sama ijo ni)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>sya</td>
+    <td>en, wan (e ijo mute)</td>
+  </tr>
+  <tr>
+    <td>lodu</td>
+    <td>anu</td>
+  </tr>
+  <tr>
+    <td>bemyu</td>
+    <td>taso (tawa toki pi ijo ante)</td>
+  </tr>
+  <tr>
+    <td>begu</td>
+    <td>ken lon, la, nasin seme (tawa toki lon ijo pi ken lon)</td>
+  </tr>
+  <tr>
+    <td>taku</td>
+    <td>tan</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>kay</td>
+    <td>nimi pi wile sona, nimi pi alasa sona</td>
+  </tr>
+  <tr>
+    <td>kya</td>
+    <td>seme</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mye</td>
+    <td>tenpo pini</td>
+  </tr>
+  <tr>
+    <td>dyu</td>
+    <td>tenpo kama</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>boy</td>
+    <td>lon, tawa, pi</td>
+  </tr>
+  <tr>
+    <td>telu</td>
+    <td>tawa (tawa toki lon )</td>
+  </tr>
+  <tr>
+    <td>doke</td>
+    <td>tan (tawa toki lon ijo tan ijo, anu ijo tawa weka)</td>
+  </tr>
+  <tr>
+    <td>say</td>
+    <td>nasin tawa, tawa (ijo)</td>
+  </tr>
+  <tr>
+    <td>pay</td>
+    <td>sewi, tawa sewi, anpa ala</td>
+  </tr>
+  <tr>
+    <td>gyu</td>
+    <td>sinpin</td>
+  </tr>
+  <tr>
+    <td>law</td>
+    <td>insa (insa selo)</td>
+  </tr>
+  <tr>
+    <td>sye</td>
+    <td>poka (ijo)</td>
+  </tr>
+  <tr>
+    <td>byo</td>
+    <td>tawa lupa, tawa supa</td>
+  </tr>
+  <tr>
+    <td>koy</td>
+    <td>poka ala mute</td>
+  </tr>
+  <tr>
+    <td>mite</td>
+    <td>insa (insa ijo wan en insa ijo tu)</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>soy</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>man</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>swi</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>tya</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>pelo</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>kula</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>deli</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>bete</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>hopya</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>miko</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>ley</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>sehu</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>siku</td>
+    <td>1000</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bya</td>
+    <td>mije</td>
+  </tr>
+  <tr>
+    <td>maw</td>
+    <td>meli</td>
+  </tr>
+  <tr>
+    <td>domay</td>
+    <td>jan pona</td>
+  </tr>
+  <tr>
+    <td>milu</td>
+    <td>olin</td>
+  </tr>
+  <tr>
+    <td>pana</td>
+    <td>luka, li luka</td>
+  </tr>
+  <tr>
+    <td>loy</td>
+    <td>lukin, oko</td>
+  </tr>
+  <tr>
+    <td>deka</td>
+    <td>kute</td>
+  </tr>
+  <tr>
+    <td>paka</td>
+    <td>lawa</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>dey</td>
+    <td>soweli</td>
+  </tr>
+  <tr>
+    <td>matya</td>
+    <td>soweli suwi, soweli Peli Katu, soweli nja</td>
+  </tr>
+  <tr>
+    <td>hugwa</td>
+    <td>soweli alasa, soweli Kani Lupu Pamiliali, soweli tomo alasa</td>
+  </tr>
+  <tr>
+    <td>pila</td>
+    <td>waso</td>
+  </tr>
+  <tr>
+    <td>sapa</td>
+    <td>kala</td>
+  </tr>
+  <tr>
+    <td>pasa</td>
+    <td>kasi</td>
+  </tr>
+  <tr>
+    <td>kikaw</td>
+    <td>kasi kiwen</td>
+  </tr>
+  <tr>
+    <td>hapa</td>
+    <td>kasi kule</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>gwa</td>
+    <td>tomo, tomo suli, pali tomo</td>
+  </tr>
+  <tr>
+    <td>gan</td>
+    <td>tomo (pi tomo suli)</td>
+  </tr>
+  <tr>
+    <td>kiso</td>
+    <td>supa pi monsi anpa, monsi anpa</td>
+  </tr>
+  <tr>
+    <td>lado</td>
+    <td>supa, supa sitelen</td>
+  </tr>
+  <tr>
+    <td>pyo</td>
+    <td>kepeken</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>doy</td>
+    <td>suli, lili ala</td>
+  </tr>
+  <tr>
+    <td>kumye</td>
+    <td>suli, sama linja, sama palisa</td>
+  </tr>
+  <tr>
+    <td>sike</td>
+    <td>kule</td>
+  </tr>
+  <tr>
+    <td>lake</td>
+    <td>loje</td>
+  </tr>
+  <tr>
+    <td>lamye</td>
+    <td>jelo</td>
+  </tr>
+  <tr>
+    <td>bote</td>
+    <td>laso</td>
+  </tr>
+  <tr>
+    <td>kahe</td>
+    <td>pimeja</td>
+  </tr>
+  <tr>
+    <td>buse</td>
+    <td>walo</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>lon</td>
+    <td>tenpo</td>
+  </tr>
+  <tr>
+    <td>tonu</td>
+    <td>tenpo sike, tenpo sike suno</td>
+  </tr>
+  <tr>
+    <td>loso</td>
+    <td>mun, tenpo mun</td>
+  </tr>
+  <tr>
+    <td>han</td>
+    <td>tenpo suno</td>
+  </tr>
+  <tr>
+    <td>kotu</td>
+    <td>tenpo pi palisa lili, tenpo suli, tenpo lili pi tenpo suno</td>
+  </tr>
+  <tr>
+    <td>mebyu</td>
+    <td>tenpo pi palisa suli, tenpo lili pi tenpo suno lili</td>
+  </tr>
+  <tr>
+    <td>busu</td>
+    <td>tenpo lili, wan tenpo</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>mabo</td>
+    <td>moku, li moku</td>
+  </tr>
+  <tr>
+    <td>bugo</td>
+    <td>moku telo, telo moku</td>
+  </tr>
+  <tr>
+    <td>kupa</td>
+    <td>kili suwi</td>
+  </tr>
+  <tr>
+    <td>hidwa</td>
+    <td>kasi moku, kasi, kili kasi</td>
+  </tr>
+  <tr>
+    <td>lano</td>
+    <td>pan, pan sike</td>
+  </tr>
+  <tr>
+    <td>simo</td>
+    <td>pan walo lili mute</td>
+  </tr>
+  <tr>
+    <td>toki</td>
+    <td>pali moku, seli moku</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td></td>
+  </tr>
+</table> 
+
+<br /><br />
+<p style="color:grey;">
+toki ante tan kije Weku (Vecderg) en lipu Glosbe. lipu nasin tan lipu Elefen.org<br />
+pona tan pami Kosi (gojidoesit).
+</p>
+
+</div> <!-- end toki pona section -->
+
+
+<div id="sitelenemoji">
+
+<br />
+<h1>🔓 🧠 🔧 🗣 👍 (WIP WIP WIP)</h1>
+<hr> <a href="dasopya.html">&lt; 🛫 ↪ 📄 😶</a> <br />
+<br /> 
+
+<table>  
+ <tr>    
+  <th>🗣 👍</th>    <th>🗣 Tasopa</th>  
+ </tr>  
+ <tr>    
+  <td>🗣 Tasopa ▶ 🗣 ✊ ↩ 👍 ↪ 🚶 🧠 ↪ 👤 ⏹ 🏝 ♾.</td>    
+  <td>dasopya i swa e pya teso i mye dwetona telu i swa e kwetose e kwepide telu dubi hoy poludaw hoy labe daso.</td>  
+ </tr>  
+ <tr>    
+  <td>🗣 🛣 👆 ▶ 👜 ⏩ 🛣 😶 🐭, ⏩ 🛣 😶 🔀 ❌.</td>    
+  <td>goy pyasahu i hay e kwetay sahu, sya e soy sibyegoy.</td>  
+ </tr>  
+ <tr>    
+  <td>⏰ ♾ 🔼 🖼 💬 ▶ 🔀 ❌. ⏰ ♾ 🔼 🖼 💬 ▶ 🔈 ⚖.</td>    
+  <td>libudoli i swa e soytawbey, sya a polu libu i polulon tona e kwetaw toso.</td>  
+ </tr>  
+ <tr>    
+  <td>👆 ▶ 👜 ↔ ⏩ 💬 🦵 800. 💬 👐 ▶ 💪 ☝ 🔧 🛣 👍.</td>    
+  <td>goy i dole hay e kwetitu 800 gulo samu, teso i tey samuhapu hoy kwesepobey sya kwepidebey.</td>  
+ </tr>  
+ <tr>    
+  <td>💬 ♾ ▶ ✊ ↩ ❌. ↩ 👇 🔼, 🏝 ❌ ▶ 😶.</td>    <td>polu samu i mye dwetona doke soyhupyo; boysesey, i swa e soy petu hoy mey matu.</td>  </tr></table> 
+<br />
+<h2>🛣 🔓</h2>
+<hr> 
+<h3>🖼 💬 ➕ 🔈 👄</h3>
+<p>⏰ ♾ 🔼 🔈 ⏹ 🖼 💬 ▶ ⚖. 👤 💭 🔼, 🖼 💬 ▶ 💪 🔈 ⏩ 🔀. 🤔, 🔈 ⬇ ⏹ # ☝ ▶ 👍 👐. 👤 💭 🔼, 🗣 Tasopa ▶ 👜 ⏩ 🖼 💬 🐘 ❌.<br /></p>
+
+<table style="width:50%; margin-left:0px;">  <tr>    <th style="width:10%">🖼</th>    <th style="width:20%">🖼 IPA</th><th>🔈</th>  </tr>  <tr>    <td>A</td>    <td>/a/</td><td>A</td>  </tr>  <tr>    <td>B</td>    <td>/b/, /v/</td><td>P 🤔 ⚡ ❌</td>  </tr>  <tr>    <td>D</td>    <td>/d/, /ð̞/</td><td>T 🤔 ⚡ ❌</td>  </tr>  <tr><td>E</td><td>/e/</td><td>E</td>  </tr>  <tr><td>G</td><td>/g/</td><td>K 🤔 ⚡ ❌</td>  </tr>  <tr><td>H</td><td>/h/, /x/, /ɾ/</td><td>🔈 ⏹ 💨 👄 📤</td>  </tr>  <tr><td>I</td><td>/i/</td><td>I</td>  </tr>  <tr><td>K</td><td>/kʰ/, /k/</td><td>K 🤔 ⚡ 🤔</td>  </tr>  <tr><td>L</td><td>/l/, /ɾ/</td><td>L</td>  </tr>  <tr><td>M</td><td>/m/</td><td>M</td>  </tr>  <tr><td>N</td><td>/n/</td><td>N</td>  </tr>  <tr><td>O</td><td>/o/</td><td>O</td>  </tr>  <tr><td>P</td><td>/pʰ/, /p/, /f/</td><td>P 🤔 ⚡ 🤔</td>  </tr>  <tr><td>S</td><td>/s/, /θ/, /ʃ/, /z/</td><td>S</td>  </tr>  <tr><td>T</td><td>/tʰ/, /t/</td><td>T 🤔 ⚡ 🤔</td>  </tr>  <tr><td>U</td><td>/u/</td><td>U</td>  </tr>  <tr><td>W</td><td>/w/, /u/, /v/</td><td>W ☯ U</td>  </tr>  <tr><td>Y</td><td>/j/, /i/</td><td>J ☯ I</td>  </tr></table> 
+
+<p>🔈 ⚡ 📍 🔈 🏁 📍 💬 ♾.<br /></p>
+<ul>
+<li><b>bamu</b> (🗣 ❗) - baMU (/ba'mu/)</li>
+<li><b>dasopya</b> (ma-toki) - dasoPYA (/daso'pja/)</li>
+</ul><br />
+<h3>💬</h3>
+<p>👤 ▶ 💪 🔧 ⏩ 💬 ⚖ 💬 🐚 ☯ 💬 ✊ ☯ 💬 ❤.<br /></p>
+<ul>
+<li><b>syo</b> - 💀 ❌, 💨 ⏹ 💀 ❌, ✊ ⏩ 💀 ❌, ⚖ 💀 ❌</li>
+</ul>
+<p>🐚 ↔ ▶ 💪 ❌ ✊ ⏩ 💪 🧠 🔼, 👤 ▶ 💪 📤 ⏩ 💬 🦵.<br /></p>
+<ul>
+<li><b>syogen</b> - 💨 ⏹ 💀 ❌ (💀 ❌-kon)</li>
+<li><b>syobey</b> - ⚖ 💀 ❌ (💀 ❌-sama)</li>
+<li><b>syosyu</b> - ✊ ⏩ 💀 ❌ (💀 ❌-pali)</li>
+</ul>
+<p>💬 ▶ ☝ ☯ 👐.<br /></p>
+<ul>
+<li><b>koko</b> - 💎, 💎 ☝, 💎 👐</li>
+<li><b>moy koko</b> - 💎 👐</li>
+<li><b>man koko</b> - 💎 ☝</li>
+</ul>
+<p>💬 ❤ ▶ 🔓 🔼 💬 🦵 ▶ 🏁 🔼 👤 ▶ 💪 ✊ ⏩ 💬 👐 ☝.<br /></p>
+<ul>
+<li><b>tukatina</b> (🦵-(📏 ✋)) - 📏 🐭 🦵</li>
+<li><b>kwepagi</b> (❌-🔓) - 🏁</li>
+<li><b>musumodyokebo</b> (lape-supa-selo) - 🔲 ⏹ 🛏 😴</li>
+</ul><br />
+<h3>👥 💬</h3>
+<p>📍 👥 💬 la: "a" ▶ ⬅ ⏹ 💬 😶. "i" ▶ ⬅ ⏹ 💬 ✊. "e" ▶ ⬅ ⏹ 💬 ✊ 🚶. ⏰ ♾ 🔼 🐚 ↔ 📍 🔓. <br /></p>
+<ul>
+<li><b>pindin, a dey i mabo e kagay</b> ("ni-ma, [a] 🐒 [i] 🍽 [e] 🌴 ma") - 👇 🏝 🔼, 🐒 ▶ 🍽 ⏩ 🌴 🏝.</li></ul>
+<p>💬 ❤ 📍 ⬅ 💬 🐚 ☯ 📍 ⬅ 💬 ✊. <br /></p>
+<ul>
+<li><b>lase sapa i lase suki</b> ("(⚡ ↪) 🐟 [i] (⚡ ↪) (↪ 💧)") - 🐟 ⏹ ⚡ ↪ ▶ ↪ 💧 ⏹ ⚡ ↪.</li></ul>
+<p>💬 ⏹ ⬅ 📍 ▶ 🚶 📍 ⬅ 💬 🐚.<br /></p><ul><li><b>daw i sami law gemo</b> ("jan [i] (↪ 🦵) 📍 (🏝 🌴)") - 👤 ▶ ↪ 🦵 📍 🏝 🌴.</li></ul><br />
+<h3>🗣 🛣</h3>
+<p><b>mye</b> ▶ ✊ ⏩ ⏰ 🏁. <b>dyu</b> ▶ ✊ ⏩ ⏰ 🚶.<br /></p>
+<ul>
+<li><b>kyu i mye legi; bay i dyu legi</b> ("sina [i] (⏰ 🏁) pali; 👈 [i] (⏰ 🚶) pali") - ⏰ 🏁 🔼 👉 pali; ⏰ 🚶 🔼 👈 ✊.</li></ul>
+<p>💬 ✊ 🧂 ▶ 📍 ⬅ 💬 ✊.<br /></p>
+<ul>
+<li><b>swe i subi sedi plu</b> ("ona [i] 💭 🏹 tawa") - 👆 ▶ 💭 🏹 ↪. </li></ul>
+<p><b>hoy</b> ▶ ✊ ⏩ 👜, ▶ 💪 🔀 ⏩ 🛣 ⏹ 💬 ❤.<br /></p>
+<ul>
+<li><b>kopo hoy bay</b> ("(👥 📄) ⏹ mi") - 👥 📄 👈 </li>
+<li><b>kopo hoy lake</b> ("(👥 📄) ⏹ loje") - 👥 📄 🔴 </li></ul>
+<p>👤 ▶ 💭 ✊ ⏩ 👥 💬 ⏹ 💭 🧠 🔼, 👤 ▶ 💪 🔓 🔧 "kay" ⏩ 👥 💬, ▶ 🔧 "kya" 📍 💬 ⏹ 💭 🧠.<br /></p>
+<ul>
+<li><b>kay a kotu i swa e kya?</b> ("(💭 🧠) [a] (⏰ 🐘) [i] ▶ [e] seme") - ⏰ ▶ seme?</li></ul>
+<p><b>teso</b> ▶ 💪 ✊ ⏩ 👥 💬 🧂.<br /></p>
+<ul>
+<li><b>swe i dani e gwa teso i swa e gwi</b> ("ona [i] (❤ 👍 ↪) [e] 🏠 [teso] [i] ▶ [e] pona") - 🏠 ▶ 👍 🔼 👆 ▶ ❤ 👍 ↪ 🏠.</li></ul>
+<p>🐚 ↔ ▶ ✊ ⏩ 💪 🧠 🔼, 🗣 Tasopa ▶ 💪 🛫 ⏩ 💬.<br /></p>
+<ul>
+<li><b>hapa e bote</b> ("(🌴 🌈) [e] laso") - 🌴 🌈 (li) 🔵</li>
+<li><b>i mapi</b> ("[i] sona") - (mi) 🧠</li>
+<li><b>e masu</b> ("[e] ⏰ suno") - ⏰ ☀ (▶ 📍)</li>
+</ul>
+<p>"<b>u</b>" ▶ ⬅ ⏹ 💬 ✊ 🚶 ⏹ 😶 ❌.<br /></p>
+<ul>
+<li><b>i day e san u swe</b> ("[i] 📤 [e] 👇 [u] 👆") - 👋 📤 ⏩ 👇 ↪ 👆</li>
+</ul>
+<p>"<b>👋</b>" ▶ ⬅ ⏹ 💬 ↩ 🗣 🔀.<br /></p>
+<ul>
+<li><b>oKanada</b> - 🏝 Kanata</li>
+<li><b>oPisa</b> - 🍽 Pisa (☯ 🍕 ☯ 🍞 ⏹ 🍎 🔴)</li></ul><br />
+
+<h3>💬 👍</h3>
+
+<table class="striped" style="width:50%; margin-left:0px;">  <tr>    <th style="width:30%">🗣 Tasopa</th>    <th style="width:80%">🗣 👍</th>  </tr>  <tr>    <td>pin</td>    <td>👇 (↔️)</td>  </tr>  <tr>    <td>san</td>    <td>👇 (↔️ ❌)</td>  </tr>  <tr>    <td>bay</td>    <td>👈</td>  </tr>  <tr>    <td>kyu</td>    <td>👉</td>  </tr>  <tr>    <td>swe</td>    <td>👆</td>  </tr>  <tr>    <td>daw</td>    <td>👤</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>lay</td>    <td>📍, 👍 (↪ 🗣 ⏹ ❤ ⚖)</td>  </tr>  <tr>    <td>kwe</td>    <td>❌ (↪ 🔀 ⏹ 💬 💨)</td>  </tr>  <tr>    <td>kate</td>    <td>📍, 👍 (↪ 🗣 ⏩ ni: 📍 ▶ 📍)</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>bamu</td>    <td>🗣, 🗣 ❗ (↪ 🗣 🔓 ↪ 👤)</td>  </tr>  <tr>    <td>gwi</td>    <td>👍</td>  </tr>  <tr>    <td>dye</td>    <td>👎</td>  </tr>  <tr>    <td>gadu</td>    <td>👉 👍, 👍 ↪ 👉</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>swa</td>    <td>▶, 📍 (↪ 🗣 ⏩ ☝ ▶ ✌)</td>  </tr>  <tr>    <td>syu</td>    <td>✊</td>  </tr>  <tr>    <td>day</td>    <td>📤</td>  </tr>  <tr>    <td>pya</td>    <td>🗣, 🗣 👥, ✊ 🗣, 😹</td>  </tr>  <tr>    <td>plu</td>    <td>↪ (⏩ 🐚), (li) ↪</td>  </tr> <tr>    <td>boti</td>    <td>💭 (↪ 🐚 ⏹ ❤ 👍)</td>  </tr>  <tr>    <td>tey</td>    <td>💪</td>  </tr>  <tr>    <td>subi</td>    <td>💭 (👤 ❤ 👍 ↪ 🐚 ☯ 👤 ❤ 👎 ↪ 🐚 🔼, 👤 💭)</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>polu</td>    <td>♾</td>  </tr>  <tr>    <td>tay</td>    <td>👐</td>  </tr>  <tr>    <td>pene</td>    <td>👐 🐭</td>  </tr>  <tr>    <td>moy</td>    <td>☝ ❌, 👐</td>  </tr>  <tr>    <td>baw</td>    <td>👐 (👐 👐 ↪ 🐚 🔀 ⏹ 👐 🐭)</td>  </tr>  <tr>    <td>buki</td>    <td>⚖, 🔀 ⚖ (↪ 🗣 ⏩ ni: ☝ ▶ ⚖ ✌, ☯ ☝ ▶ 🔀 ⚖ ✌)</td>  </tr>  <tr>    <td>byu</td>    <td>👐 👐 (↪ 🗣 ⏩ ni: ♾ ▶ 🐭 ⚖ 🐚 👇)</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>sya</td>    <td>➕, ☝ (⏩ 🐚 👐)</td>  </tr>  <tr>    <td>lodu</td>    <td>☯</td>  </tr>  <tr>    <td>bemyu</td>    <td>🤔 (↪ 🗣 ⏹ 🐚 🔀)</td>  </tr>  <tr>    <td>begu</td>    <td>💪 📍, 🔼, 🛣 ❓ (↪ 🗣 📍 🐚 ⏹ 💪 📍)</td>  </tr>  <tr>    <td>taku</td>    <td>↩</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>kay</td>    <td>💬 ⏹ 💭 🧠, 💬 ⏹ 🏹 🧠</td>  </tr>  <tr>    <td>kya</td>    <td>❓</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>mye</td>    <td>⏰ 🏁</td>  </tr>  <tr>    <td>dyu</td>    <td>⏰ 🚶</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>boy</td>    <td>📍, ↪, ⏹</td>  </tr>  <tr>    <td>telu</td>    <td>↪ (↪ 🗣 📍 )</td>  </tr>  <tr>    <td>doke</td>    <td>↩ (↪ 🗣 📍 🐚 ↩ 🐚, ☯ 🐚 ↪ 🛫)</td>  </tr>  <tr>    <td>say</td>    <td>🛣 ↪, ↪ (ijo)</td>  </tr>  <tr>    <td>pay</td>    <td>⬆, ↪ ⬆, ⬇ ❌</td>  </tr>  <tr>    <td>gyu</td>    <td>➡</td>  </tr>  <tr>    <td>law</td>    <td>⏺ (⏺ 🔲)</td>  </tr>  <tr>    <td>sye</td>    <td>↔ (ijo)</td>  </tr>  <tr>    <td>byo</td>    <td>↪ 🕳, ↪ 🛏</td>  </tr>  <tr>    <td>koy</td>    <td>↔ ❌ 👐</td>  </tr>  <tr>    <td>mite</td>    <td>⏺ (⏺ 🐚 ☝ ➕ ⏺ 🐚 ✌)</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>soy</td>    <td>0</td>  </tr>  <tr>    <td>man</td>    <td>1</td>  </tr>  <tr>    <td>swi</td>    <td>2</td>  </tr>  <tr>    <td>tya</td>    <td>3</td>  </tr>  <tr>    <td>pelo</td>    <td>4</td>  </tr>  <tr>    <td>kula</td>    <td>5</td>  </tr>  <tr>    <td>deli</td>    <td>6</td>  </tr>  <tr>    <td>bete</td>    <td>7</td>  </tr>  <tr>    <td>hopya</td>    <td>8</td>  </tr>  <tr>    <td>miko</td>    <td>9</td>  </tr>  <tr>    <td>ley</td>    <td>10</td>  </tr>  <tr>    <td>sehu</td>    <td>100</td>  </tr>  <tr>    <td>siku</td>    <td>1000</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>bya</td>    <td>👨</td>  </tr>  <tr>    <td>maw</td>    <td>👧</td>  </tr>  <tr>    <td>domay</td>    <td>👤 👍</td>  </tr>  <tr>    <td>milu</td>    <td>💕</td>  </tr>  <tr>    <td>📤</td>    <td>✋, ▶ ✋</td>  </tr>  <tr>    <td>loy</td>    <td>👀, 👁</td>  </tr>  <tr>    <td>deka</td>    <td>👂</td>  </tr>  <tr>    <td>paka</td>    <td>😶</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>dey</td>    <td>🐒</td>  </tr>  <tr>    <td>matya</td>    <td>🐒 🍭, 🐒 Peli Katu, 🐒 nja</td>  </tr>  <tr>    <td>hugwa</td>    <td>🐒 🏹, 🐒 Kani Lupu Pamiliali, 🐒 🏠 🏹</td>  </tr>  <tr>    <td>pila</td>    <td>🦅</td>  </tr>  <tr>    <td>sapa</td>    <td>🐟</td>  </tr>  <tr>    <td>pasa</td>    <td>🌴</td>  </tr>  <tr>    <td>kikaw</td>    <td>🌴 💎</td>  </tr>  <tr>    <td>hapa</td>    <td>🌴 🌈</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>gwa</td>    <td>🏠, 🏠 🐘, ✊ 🏠</td>  </tr>  <tr>    <td>gan</td>    <td>🏠 (⏹ 🏠 🐘)</td>  </tr>  <tr>    <td>kiso</td>    <td>🛏 ⏹ ⬅ ⬇, ⬅ ⬇</td>  </tr>  <tr>    <td>lado</td>    <td>🛏, 🛏 🖼</td>  </tr>  <tr>    <td>pyo</td>    <td>🔧</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>doy</td>    <td>🐘, 🐭 ❌</td>  </tr>  <tr>    <td>kumye</td>    <td>🐘, ⚖ 〰, ⚖ 📏</td>  </tr>  <tr>    <td>⭕</td>    <td>🌈</td>  </tr>  <tr>    <td>lake</td>    <td>🔴</td>  </tr>  <tr>    <td>lamye</td>    <td>💛</td>  </tr>  <tr>    <td>bote</td>    <td>🔵</td>  </tr>  <tr>    <td>kahe</td>    <td>⚫</td>  </tr>  <tr>    <td>buse</td>    <td>⚪</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>📍</td>    <td>⏰</td>  </tr>  <tr>    <td>tonu</td>    <td>⏰ ⭕, ⏰ ⭕ ☀</td>  </tr>  <tr>    <td>loso</td>    <td>🌙, ⏰ 🌙</td>  </tr>  <tr>    <td>han</td>    <td>⏰ ☀</td>  </tr>  <tr>    <td>kotu</td>    <td>⏰ ⏹ 📏 🐭, ⏰ 🐘, ⏰ 🐭 ⏹ ⏰ ☀</td>  </tr>  <tr>    <td>mebyu</td>    <td>⏰ ⏹ 📏 🐘, ⏰ 🐭 ⏹ ⏰ ☀ 🐭</td>  </tr>  <tr>    <td>busu</td>    <td>⏰ 🐭, ☝ ⏰</td>  </tr>  <tr>    <td>-</td>    <td></td>  </tr>  <tr>    <td>mabo</td>    <td>🍽, ▶ 🍽</td>  </tr>  <tr>    <td>bugo</td>    <td>🍽 💧, 💧 🍽</td>  </tr>  <tr>    <td>kupa</td>    <td>🍎 🍭</td>  </tr>  <tr>    <td>hidwa</td>    <td>🌴 🍽, 🌴, 🍎 🌴</td>  </tr>  <tr>    <td>lano</td>    <td>🍞, 🍞 ⭕</td>  </tr>  <tr>    <td>simo</td>    <td>🍞 ⚪ 🐭 👐</td>  </tr>  <tr>    <td>🗣</td>    <td>✊ 🍽, 🔥 🍽</td>  </tr>  <tr>    <td>...</td>    <td></td>  </tr></table> <br /><br /><p style="color:grey;">Transcribed by Vecderg from toki pona translation. 📄 🛣 ↩ 📄 Elefen.org</p></div> <!-- end sitelen emoji section -->
+
+
+<br /><br /><br /><br />
+<hr> 
+
+
+<script type="text/javascript">
+
+	function onLoad(){
+		onLoad2();
+	}
+
+</script>
+
+</body>
+</html>
+
