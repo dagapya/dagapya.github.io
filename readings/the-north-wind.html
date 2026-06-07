@@ -8,6 +8,23 @@
 
 <head>
 <meta charset="utf-8" name="viewport" content="width=1024, initial-scale=0.3, minimum-scale=0.3"/>
+
+<script type="text/javascript">
+
+	function onLoad(){
+		//dark mode
+		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			toggleLight();
+		}
+	}
+	
+	function toggleLight(){
+		var element = document.body;
+		element.classList.toggle("dark-body");
+	}
+	
+</script>
+
 </head>
 
 <!-- BODY -->
@@ -29,9 +46,12 @@
     <td style="padding:5px 10px 5px 10px; border: 4px solid #dddddd; border-radius: 20px;">
         <h1 style="text-align:center;"><b>The North Wind and the Sun</b></h1>
         <hr> 
+        
         <br />
-
-        <a href="../readings.html">< Back to Readings</a>
+        <button onclick="toggleLight()" style="height:40px;width:40px;font-size:24px">💡</button>
+        <br />
+        <br />
+        <a href="../readings.html" >< Back to Readings</a>
         <br />
         <br />
 

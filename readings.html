@@ -4,10 +4,27 @@
 <html lang="en-US">
 <title>Dagapya - Home</title>
 
-<link rel="stylesheet" href="dstyle.css">
+<link rel="stylesheet" href="readings/readstyle.css">
 
 <head>
 <meta charset="utf-8" name="viewport" content="width=1024, initial-scale=0.3, minimum-scale=0.3"/>
+
+<script type="text/javascript">
+
+	function onLoad(){
+		//dark mode
+		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			toggleLight();
+		}
+	}
+	
+	function toggleLight(){
+		var element = document.body;
+		element.classList.toggle("dark-body");
+	}
+	
+</script>
+
 </head>
 
 <!-- BODY -->
@@ -24,12 +41,12 @@
 
 <br />
 
-<table style="width:100%;margin-left:-25px;font-size:18px;">
+<table style="width:600px;margin-left:-25px;font-size:18px;">
 <tr>
-    <td style="width:1000px; padding:5px 10px 5px 10px; border: 4px solid #dddddd; border-radius: 20px;">
+    <td style="padding:5px 10px 5px 10px; border: 4px solid #dddddd; border-radius: 20px;">
         <h1 style="text-align:center;"><b>Readings</b></h1>
         <hr> 
-        <br />
+
         <p>Translations</p>
         <ul>
             <li><a href="readings/the-lords-prayer.html">The Lord's Prayer</a></li>

@@ -47,9 +47,10 @@ body {
 
 a {
  text-decoration:none;	
+ color:rgb(41, 137, 197)
 }
 a:visited{
- color: MediumPurple;
+ color: rgb(125, 81, 212);
 }
 
 .striped tr:nth-child(odd){
@@ -71,6 +72,6 @@ a:visited{
 
 #invis-border{
   border-collapse:collapse; 
-  border: 1px solid white;
+  border: 1px solid transparent;
   font-size:18px;
 }
