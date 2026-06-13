@@ -53,10 +53,10 @@ body {
 
 a {
  text-decoration:none;	
- color:rgb(247, 155, 198);
+ color:rgb(100, 199, 245);
 }
 a:visited{
- color: rgb(236, 50, 36);
+ color: rgb(220, 136, 241);
 }
 
 .striped tr:nth-child(odd){
